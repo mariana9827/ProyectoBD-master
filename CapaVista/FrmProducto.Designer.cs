@@ -39,11 +39,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCosto = new System.Windows.Forms.TextBox();
+            this.txtSale = new System.Windows.Forms.TextBox();
+            this.txtPeso = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCod = new System.Windows.Forms.TextBox();
+            this.cboMedida = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,6 +106,7 @@
             this.btnAddCou.TabIndex = 45;
             this.btnAddCou.Text = "Agregar";
             this.btnAddCou.UseVisualStyleBackColor = true;
+            this.btnAddCou.Click += new System.EventHandler(this.btnAddCou_Click);
             // 
             // label2
             // 
@@ -146,26 +148,27 @@
             this.label5.TabIndex = 50;
             this.label5.Text = "Categoría:";
             // 
-            // textBox1
+            // txtCosto
             // 
-            this.textBox1.Location = new System.Drawing.Point(177, 279);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 20);
-            this.textBox1.TabIndex = 51;
+            this.txtCosto.Location = new System.Drawing.Point(177, 279);
+            this.txtCosto.Name = "txtCosto";
+            this.txtCosto.Size = new System.Drawing.Size(149, 20);
+            this.txtCosto.TabIndex = 51;
             // 
-            // textBox2
+            // txtSale
             // 
-            this.textBox2.Location = new System.Drawing.Point(177, 332);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(149, 20);
-            this.textBox2.TabIndex = 52;
+            this.txtSale.Location = new System.Drawing.Point(177, 332);
+            this.txtSale.Name = "txtSale";
+            this.txtSale.Size = new System.Drawing.Size(149, 20);
+            this.txtSale.TabIndex = 52;
             // 
-            // textBox3
+            // txtPeso
             // 
-            this.textBox3.Location = new System.Drawing.Point(177, 378);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(149, 20);
-            this.textBox3.TabIndex = 53;
+            this.txtPeso.Location = new System.Drawing.Point(173, 378);
+            this.txtPeso.Name = "txtPeso";
+            this.txtPeso.Size = new System.Drawing.Size(69, 20);
+            this.txtPeso.TabIndex = 53;
+            this.txtPeso.TextChanged += new System.EventHandler(this.txtPeso_TextChanged);
             // 
             // label7
             // 
@@ -177,23 +180,41 @@
             this.label7.TabIndex = 54;
             this.label7.Text = "Nombre:";
             // 
-            // textBox4
+            // txtCod
             // 
-            this.textBox4.Location = new System.Drawing.Point(177, 138);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(149, 20);
-            this.textBox4.TabIndex = 55;
+            this.txtCod.Location = new System.Drawing.Point(177, 138);
+            this.txtCod.Name = "txtCod";
+            this.txtCod.Size = new System.Drawing.Size(149, 20);
+            this.txtCod.TabIndex = 55;
+            // 
+            // cboMedida
+            // 
+            this.cboMedida.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMedida.FormattingEnabled = true;
+            this.cboMedida.Items.AddRange(new object[] {
+            "Kilogramo",
+            "Gramo",
+            "Litro",
+            "MiliLitro",
+            "Metro",
+            "Centímetro"});
+            this.cboMedida.Location = new System.Drawing.Point(261, 378);
+            this.cboMedida.Name = "cboMedida";
+            this.cboMedida.Size = new System.Drawing.Size(65, 21);
+            this.cboMedida.TabIndex = 56;
+            this.cboMedida.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // FrmProductocs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 475);
-            this.Controls.Add(this.textBox4);
+            this.ClientSize = new System.Drawing.Size(419, 475);
+            this.Controls.Add(this.cboMedida);
+            this.Controls.Add(this.txtCod);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPeso);
+            this.Controls.Add(this.txtSale);
+            this.Controls.Add(this.txtCosto);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -207,6 +228,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmProductocs";
             this.Text = "Productos";
+            this.Load += new System.EventHandler(this.FrmProductocs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -225,10 +247,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCosto;
+        private System.Windows.Forms.TextBox txtSale;
+        private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCod;
+        private System.Windows.Forms.ComboBox cboMedida;
     }
 }

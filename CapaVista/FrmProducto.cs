@@ -21,5 +21,17 @@ namespace CapaVista
         {
 
         }
+
+        private void cboTipo_SelectedIndexChanged (object sender, EventArgs e)
+        {
+            CapaNegocios.clsProducto categoria = new CapaNegocios.clsProducto();
+            DataTable dtCategoria = new DataTable();
+
+            dtCategoria = categoria.llenarCategoria();
+            cboTipo.DataSource = dtCategoria;
+            cboTipo.DisplayMember = "Categoria";
+            cboTipo.ValueMember = "Id_Tipo";
+        
+        }
     }
 }

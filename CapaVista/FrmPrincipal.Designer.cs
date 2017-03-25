@@ -123,7 +123,7 @@
             this.currierToolStripMenuItem});
             this.agregarToolStripMenuItem.Image = global::CapaVista.Properties.Resources.person_add_icon_icons_com_50077;
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(152, 28);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(142, 28);
             this.agregarToolStripMenuItem.Text = "Agregar";
             // 
             // nacionalExtranjeroToolStripMenuItem
@@ -166,8 +166,9 @@
             // 
             this.agregarToolStripMenuItem1.Image = global::CapaVista.Properties.Resources.shopping_cart_add_button_icon_icons_com_56132;
             this.agregarToolStripMenuItem1.Name = "agregarToolStripMenuItem1";
-            this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(142, 28);
+            this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(152, 28);
             this.agregarToolStripMenuItem1.Text = "Agregar";
+            this.agregarToolStripMenuItem1.Click += new System.EventHandler(this.agregarToolStripMenuItem1_Click_1);
             // 
             // btnReports
             // 
@@ -242,7 +243,7 @@
             // 
             this.agregarToolStripMenuItem2.Image = global::CapaVista.Properties.Resources.person_add_icon_icons_com_50077;
             this.agregarToolStripMenuItem2.Name = "agregarToolStripMenuItem2";
-            this.agregarToolStripMenuItem2.Size = new System.Drawing.Size(152, 28);
+            this.agregarToolStripMenuItem2.Size = new System.Drawing.Size(142, 28);
             this.agregarToolStripMenuItem2.Text = "Agregar";
             // 
             // ventaToolStripMenuItem

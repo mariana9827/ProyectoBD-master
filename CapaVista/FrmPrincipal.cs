@@ -156,5 +156,16 @@ namespace CapaVista
             FrmJuridico juridico = new FrmJuridico();
             juridico.Show();
         }
+
+        private void agregarToolStripMenuItem1_Click (object sender, EventArgs e)
+        {
+            
+        }
+
+        private void agregarToolStripMenuItem1_Click_1 (object sender, EventArgs e)
+        {
+            FrmProductocs producto = new FrmProductocs();
+            producto.Show();
+        }
     }
 }

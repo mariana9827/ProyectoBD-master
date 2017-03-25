@@ -84,6 +84,7 @@
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(149, 21);
             this.cboTipo.TabIndex = 43;
+            this.cboTipo.Click += new System.EventHandler(this.cboTipo_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -141,9 +142,9 @@
             this.label5.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(21, 186);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 19);
+            this.label5.Size = new System.Drawing.Size(79, 19);
             this.label5.TabIndex = 50;
-            this.label5.Text = "Tipo Producto:";
+            this.label5.Text = "Categoría:";
             // 
             // textBox1
             // 
@@ -203,8 +204,9 @@
             this.Controls.Add(this.cboTipo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmProductocs";
-            this.Text = "FrmProductocs";
+            this.Text = "Productos";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

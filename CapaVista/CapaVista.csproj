@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7473D748-2497-47CE-929F-89E9BC681290}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaVista</RootNamespace>
+    <AssemblyName>CapaVista</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCourrier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCourrier.Designer.cs">
+      <DependentUpon>FrmCourrier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJuridico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJuridico.Designer.cs">
+      <DependentUpon>FrmJuridico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductocs.Designer.cs">
+      <DependentUpon>FrmProductocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProyectoBDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoBDDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCourrier.resx">
+      <DependentUpon>FrmCourrier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJuridico.resx">
+      <DependentUpon>FrmJuridico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductocs.resx">
+      <DependentUpon>FrmProductocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj">
+      <Project>{296bc0c3-531a-4598-b0ce-8e0d5a580f3b}</Project>
+      <Name>CapaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ProyectoBDDataSet.xsc">
+      <DependentUpon>ProyectoBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoBDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoBDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoBDDataSet.xss">
+      <DependentUpon>ProyectoBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Icono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7b5f65_12de7cffa2f7494a9abfc5547d98718a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inscripcion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27799.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1489824984_add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1489825052_user_profile_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-add_icon-icons.com_50077.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ios7-world-outline_icon-icons.com_50126.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486146612-propertyagent002_79450.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call_icon-icons.com_63771.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart-add-button_icon-icons.com_56132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart-with-an-arrow_icon-icons.com_56122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins-stacks-money_icon-icons.com_56191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drop_box_online_social_media_icon-icons.com_71865.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sell_5097.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carduse_card_payment_5122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drop_box_online_social_media_icon-icons.com_718651.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-packages-on-a-trolley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-packages-on-a-trolley %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-packages-on-a-trolley %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-packages-on-a-trolley %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple-users-silhouette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple-users-silhouette %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-with-company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-with-company1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logistics-delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

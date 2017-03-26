@@ -172,5 +172,11 @@ namespace CapaVista
             FrmProveedores provedor = new FrmProveedores();
             provedor.Show();
         }
+
+        private void clientesToolStripMenuItem1_Click (object sender, EventArgs e)
+        {
+            FrmReporteCliente reporCliente = new FrmReporteCliente();
+            reporCliente.Show();
+        }
     }
 }

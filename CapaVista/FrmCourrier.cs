@@ -50,5 +50,10 @@ namespace CapaVista
         {
             
         }
+
+        private void cboJuridico_SelectedIndexChanged (object sender, EventArgs e)
+        {
+
+        }
     }
 }

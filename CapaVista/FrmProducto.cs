@@ -41,14 +41,14 @@ namespace CapaVista
 
         private void btnAddCou_Click (object sender, EventArgs e)
         {
-            //CapaNegocios.clsProducto producto = new CapaNegocios.clsProducto();
+            CapaNegocios.clsProducto producto = new CapaNegocios.clsProducto();
 
-            //if (producto.insertarProd(Int32.Parse(txtCod.Text), float.Parse(txtSale.Text), float.Parse(txtPeso.Text), float.Parse(txtCosto.Text), txtName.Text, int.Parse(cboTipo.SelectedValue.ToString()), cboMedida.Text))
-            //{
-            //    MessageBox.Show("Producto agregado");
-            //    limpiar();
+            if (producto.insertarProd(Int32.Parse(txtCod.Text), float.Parse(txtSale.Text), float.Parse(txtPeso.Text), float.Parse(txtCosto.Text), txtName.Text, int.Parse(cboTipo.SelectedValue.ToString()), cboMedida.Text,int.Parse(cboProveedor.SelectedValue.ToString())))
+            {
+                MessageBox.Show("Producto agregado");
+                limpiar();
 
-            //}
+            }
         }
 
         private void comboBox1_SelectedIndexChanged (object sender, EventArgs e)
@@ -74,7 +74,24 @@ namespace CapaVista
 
         private void cboProveedor_SelectedIndexChanged (object sender, EventArgs e)
         {
+            CapaNegocios.clsProducto proveedor = new CapaNegocios.clsProducto();
+            DataTable dtProveedor = new DataTable();
 
+            dtProveedor = proveedor.llenarPersona();
+            cboProveedor.DataSource = dtProveedor;
+            cboProveedor.DisplayMember = "Id_Persona";
+            cboProveedor.ValueMember = "Id_Persona";
+        }
+
+        private void cboTipo_SelectedIndexChanged_1 (object sender, EventArgs e)
+        {
+            CapaNegocios.clsProducto categoria = new CapaNegocios.clsProducto();
+            DataTable dtcategoria = new DataTable();
+
+            dtcategoria = categoria.llenarCategoria();
+            cboTipo.DataSource = dtcategoria;
+            cboTipo.DisplayMember = "Nombre";
+            cboTipo.ValueMember = "Id_Tipo";
         }
     }
 }

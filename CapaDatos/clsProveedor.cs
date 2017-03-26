@@ -3,11 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace CapaDatos
 {
-   public class clsProveedor
+    public class clsProveedor
     {
+        public DataTable cargarClientes ()
+        {
+            clsConexion conecta = new clsConexion();
+            DataTable dtclientes;
+            dtclientes = conecta.ejecutar("SELECT Id_Persona,Activo from dbo.Cliente");
+            return dtclientes;
+        }
+
         public bool insertarNacional (int identificacion, String nombre, String apellido1, String apellido2, int genero, String descripcion)
         {
 

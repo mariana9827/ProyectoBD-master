@@ -224,7 +224,6 @@
             this.cboProveedor.Name = "cboProveedor";
             this.cboProveedor.Size = new System.Drawing.Size(149, 21);
             this.cboProveedor.TabIndex = 58;
-            this.cboProveedor.SelectedIndexChanged += new System.EventHandler(this.cboProveedor_SelectedIndexChanged);
             this.cboProveedor.Click += new System.EventHandler(this.cboProveedor_SelectedIndexChanged);
             // 
             // FrmProductocs

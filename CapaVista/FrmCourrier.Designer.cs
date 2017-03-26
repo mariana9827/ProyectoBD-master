@@ -95,6 +95,7 @@
             this.cboJuridico.Name = "cboJuridico";
             this.cboJuridico.Size = new System.Drawing.Size(149, 21);
             this.cboJuridico.TabIndex = 40;
+            this.cboJuridico.SelectedIndexChanged += new System.EventHandler(this.cboJuridico_SelectedIndexChanged);
             this.cboJuridico.DropDownStyleChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.cboJuridico.Click += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 

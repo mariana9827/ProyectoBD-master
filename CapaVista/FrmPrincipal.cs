@@ -165,6 +165,10 @@ namespace CapaVista
 
         private void proveedorToolStripMenuItem_Click (object sender, EventArgs e)
         {
+        }
+
+        private void nuevoToolStripMenuItem_Click (object sender, EventArgs e)
+        {
             FrmProveedores provedor = new FrmProveedores();
             provedor.Show();
         }

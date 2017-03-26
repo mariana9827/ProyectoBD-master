@@ -21,32 +21,32 @@ namespace CapaVista
         private void btnAddCou_Click (object sender, EventArgs e)
         {
             CapaNegocios.clsProveedor proveedor = new CapaNegocios.clsProveedor();
-            if (rbNacional.Checked)
-            {
-                if (proveedor.insertarNacional(Int32.Parse(txtId.Text), txtName.Text, txtApe1.Text, txtApe2.Text, rbMale.Checked, txtDesc.Text))
+        
+                if (rbNacional.Checked)
                 {
-                    MessageBox.Show("Proveedor Nacional Agregado");
-                    limpiar();
+                    if (proveedor.insertarNacional(Int32.Parse(txtId.Text), txtName.Text, txtApe1.Text, txtApe2.Text, rbMale.Checked, txtDesc.Text))
+                    {
+                        MessageBox.Show("Proveedor Nacional Agregado");
+                        limpiar();
+                    }
                 }
-            }
-            if (rbExtranjero.Checked)
-            {
-                if (proveedor.insertarExtranjera(Int32.Parse(txtId.Text), txtName.Text, txtApe1.Text, txtApe2.Text, rbMale.Checked, txtDesc.Text))
+                if (rbExtranjero.Checked)
                 {
-                    MessageBox.Show("Proveedor Extranjero Agregado");
-                    limpiar();
+                    if (proveedor.insertarExtranjera(Int32.Parse(txtId.Text), txtName.Text, txtApe1.Text, txtApe2.Text, rbMale.Checked, txtDesc.Text))
+                    {
+                        MessageBox.Show("Proveedor Extranjero Agregado");
+                        limpiar();
+                    }
                 }
-            }
-            if (rbJuridico.Checked)
-            {
-                if (proveedor.insertarJuridico(txtDesc.Text, txtName.Text, Int32.Parse(txtId.Text)))
+                if (rbJuridico.Checked)
                 {
-                    MessageBox.Show("Proveedor Juridico Agregado");
-                    limpiar();
+                    if (proveedor.insertarJuridico(txtDesc.Text, txtName.Text, Int32.Parse(txtId.Text)))
+                    {
+                        MessageBox.Show("Proveedor Juridico Agregado");
+                        limpiar();
+                    }
                 }
-            }
-
-        } 
+          } 
 
         public void limpiar ()
         {
@@ -77,6 +77,7 @@ namespace CapaVista
             txtApe2.Visible = true;
             gbGenre.Visible = true;
             lbExtran.Visible = false;
+            btnAddCou.Visible = true;
         }
 
         private void rbExtranjero_CheckedChanged (object sender, EventArgs e)
@@ -94,6 +95,7 @@ namespace CapaVista
             txtApe2.Visible = true;
             gbGenre.Visible = true;
             lbExtran.Visible = true;
+            btnAddCou.Visible = true;
         }
 
         private void rbJuridico_CheckedChanged (object sender, EventArgs e)
@@ -111,7 +113,10 @@ namespace CapaVista
             txtApe2.Visible = false;
             gbGenre.Visible = false;
             lbExtran.Visible = false;
+            btnAddCou.Visible = true;
         }
+
+
     }
 
 }

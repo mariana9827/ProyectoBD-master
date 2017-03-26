@@ -51,7 +51,6 @@
             this.lbApe1 = new System.Windows.Forms.Label();
             this.lbApe2 = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
-            this.cboID = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbPerson.SuspendLayout();
             this.gbGenre.SuspendLayout();
@@ -61,7 +60,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(141, 33);
+            this.label6.Location = new System.Drawing.Point(156, 36);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(162, 26);
             this.label6.TabIndex = 19;
@@ -82,7 +81,7 @@
             // 
             this.lbDes.AutoSize = true;
             this.lbDes.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDes.Location = new System.Drawing.Point(41, 194);
+            this.lbDes.Location = new System.Drawing.Point(41, 195);
             this.lbDes.Name = "lbDes";
             this.lbDes.Size = new System.Drawing.Size(91, 19);
             this.lbDes.TabIndex = 47;
@@ -103,7 +102,7 @@
             // 
             // txtDesc
             // 
-            this.txtDesc.Location = new System.Drawing.Point(215, 195);
+            this.txtDesc.Location = new System.Drawing.Point(194, 194);
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(138, 20);
             this.txtDesc.TabIndex = 53;
@@ -117,14 +116,14 @@
             this.gbPerson.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbPerson.Location = new System.Drawing.Point(45, 79);
             this.gbPerson.Name = "gbPerson";
-            this.gbPerson.Size = new System.Drawing.Size(308, 40);
+            this.gbPerson.Size = new System.Drawing.Size(280, 40);
             this.gbPerson.TabIndex = 56;
             this.gbPerson.TabStop = false;
             // 
             // rbJuridico
             // 
             this.rbJuridico.AutoSize = true;
-            this.rbJuridico.Location = new System.Drawing.Point(225, 13);
+            this.rbJuridico.Location = new System.Drawing.Point(207, 13);
             this.rbJuridico.Name = "rbJuridico";
             this.rbJuridico.Size = new System.Drawing.Size(67, 19);
             this.rbJuridico.TabIndex = 2;
@@ -137,7 +136,7 @@
             // rbExtranjero
             // 
             this.rbExtranjero.AutoSize = true;
-            this.rbExtranjero.Location = new System.Drawing.Point(116, 13);
+            this.rbExtranjero.Location = new System.Drawing.Point(101, 13);
             this.rbExtranjero.Name = "rbExtranjero";
             this.rbExtranjero.Size = new System.Drawing.Size(80, 19);
             this.rbExtranjero.TabIndex = 1;
@@ -165,7 +164,7 @@
             this.lbExtran.AutoSize = true;
             this.lbExtran.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbExtran.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbExtran.Location = new System.Drawing.Point(356, 363);
+            this.lbExtran.Location = new System.Drawing.Point(191, 381);
             this.lbExtran.Name = "lbExtran";
             this.lbExtran.Size = new System.Drawing.Size(71, 15);
             this.lbExtran.TabIndex = 69;
@@ -177,7 +176,7 @@
             this.gbGenre.Controls.Add(this.rbMale);
             this.gbGenre.Controls.Add(this.rbFemale);
             this.gbGenre.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbGenre.Location = new System.Drawing.Point(215, 398);
+            this.gbGenre.Location = new System.Drawing.Point(194, 404);
             this.gbGenre.Name = "gbGenre";
             this.gbGenre.Size = new System.Drawing.Size(138, 68);
             this.gbGenre.TabIndex = 68;
@@ -219,7 +218,7 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(215, 147);
+            this.txtId.Location = new System.Drawing.Point(194, 149);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(138, 20);
             this.txtId.TabIndex = 65;
@@ -227,7 +226,7 @@
             // 
             // txtApe2
             // 
-            this.txtApe2.Location = new System.Drawing.Point(215, 358);
+            this.txtApe2.Location = new System.Drawing.Point(194, 358);
             this.txtApe2.Name = "txtApe2";
             this.txtApe2.Size = new System.Drawing.Size(138, 20);
             this.txtApe2.TabIndex = 64;
@@ -235,7 +234,7 @@
             // 
             // txtApe1
             // 
-            this.txtApe1.Location = new System.Drawing.Point(215, 301);
+            this.txtApe1.Location = new System.Drawing.Point(194, 303);
             this.txtApe1.Name = "txtApe1";
             this.txtApe1.Size = new System.Drawing.Size(138, 20);
             this.txtApe1.TabIndex = 63;
@@ -243,7 +242,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(215, 246);
+            this.txtName.Location = new System.Drawing.Point(194, 248);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(138, 20);
             this.txtName.TabIndex = 62;
@@ -293,21 +292,11 @@
             this.lbName.Text = "Nombre:";
             this.lbName.Visible = false;
             // 
-            // cboID
-            // 
-            this.cboID.FormattingEnabled = true;
-            this.cboID.Location = new System.Drawing.Point(215, 147);
-            this.cboID.Name = "cboID";
-            this.cboID.Size = new System.Drawing.Size(138, 21);
-            this.cboID.TabIndex = 70;
-            this.cboID.Visible = false;
-            // 
             // FrmProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 524);
-            this.Controls.Add(this.cboID);
+            this.ClientSize = new System.Drawing.Size(393, 524);
             this.Controls.Add(this.gbPerson);
             this.Controls.Add(this.lbExtran);
             this.Controls.Add(this.gbGenre);
@@ -363,6 +352,5 @@
         private System.Windows.Forms.Label lbApe1;
         private System.Windows.Forms.Label lbApe2;
         private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.ComboBox cboID;
     }
 }

@@ -20,11 +20,11 @@ namespace CapaNegocios
             return new CapaDatos.clsProducto().insertarProductos(codigo,precio,peso,costo,nombre,tipo, medidas, identificacion);
         }
 
-        //public DataTable llenarPersona ()
-        //{
-        //    CapaDatos.clsProducto persona = new CapaDatos.clsProducto();
-        //    return persona.cargarProveedors();
-        //}
+        public DataTable llenarPersona ()
+        {
+            CapaDatos.clsProducto persona = new CapaDatos.clsProducto();
+            return persona.cargarProveedor();
+        }
     }
-    
+
 }

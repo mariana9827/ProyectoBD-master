@@ -139,6 +139,12 @@
   <data name="1486146612-propertyagent002_79450" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1486146612-propertyagent002_79450.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="plus_icon-icons.com_69476" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_icon-icons.com_69476.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="message" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\message.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="drop_box_online_social_media_icon-icons.com_71865" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\drop_box_online_social_media_icon-icons.com_71865.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -168,6 +174,9 @@
   </data>
   <data name="shopping-cart-add-button_icon-icons.com_56132" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopping-cart-add-button_icon-icons.com_56132.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus_circle_icon-icons.com_66720" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_circle_icon-icons.com_66720.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="multiple-users-silhouette" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multiple-users-silhouette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,7 +211,7 @@
   <data name="phone-call_icon-icons.com_63771" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phone-call_icon-icons.com_63771.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="message" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\message.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="plus_icon-icons.com_69985" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_icon-icons.com_69985.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

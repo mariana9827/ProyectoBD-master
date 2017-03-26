@@ -323,6 +323,36 @@ namespace CapaVista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap plus_circle_icon_icons_com_66720 {
+            get {
+                object obj = ResourceManager.GetObject("plus_circle_icon-icons.com_66720", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_icon_icons_com_69476 {
+            get {
+                object obj = ResourceManager.GetObject("plus_icon-icons.com_69476", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_icon_icons_com_69985 {
+            get {
+                object obj = ResourceManager.GetObject("plus_icon-icons.com_69985", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sell_5097 {
             get {
                 object obj = ResourceManager.GetObject("sell_5097", resourceCulture);

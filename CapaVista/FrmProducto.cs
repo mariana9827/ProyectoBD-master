@@ -31,7 +31,7 @@ namespace CapaVista
             cboTipo.DataSource = dtCategoria;
             cboTipo.DisplayMember = "Categoria";
             cboTipo.ValueMember = "Id_Tipo";
-        
+
         }
 
         private void FrmProductocs_Load (object sender, EventArgs e)
@@ -41,14 +41,14 @@ namespace CapaVista
 
         private void btnAddCou_Click (object sender, EventArgs e)
         {
-            CapaNegocios.clsProducto producto = new CapaNegocios.clsProducto();
+            //CapaNegocios.clsProducto producto = new CapaNegocios.clsProducto();
 
-            if (producto.insertarProd(Int32.Parse(txtCod.Text),float.Parse(txtSale.Text), float.Parse(txtPeso.Text),float.Parse(txtCosto.Text), txtName.Text, int.Parse(cboTipo.SelectedValue.ToString()),cboMedida.Text))
-            {
-                MessageBox.Show("Producto agregado");
-                limpiar();
-               
-            }
+            //if (producto.insertarProd(Int32.Parse(txtCod.Text), float.Parse(txtSale.Text), float.Parse(txtPeso.Text), float.Parse(txtCosto.Text), txtName.Text, int.Parse(cboTipo.SelectedValue.ToString()), cboMedida.Text))
+            //{
+            //    MessageBox.Show("Producto agregado");
+            //    limpiar();
+
+            //}
         }
 
         private void comboBox1_SelectedIndexChanged (object sender, EventArgs e)
@@ -70,6 +70,11 @@ namespace CapaVista
             txtSale.Text = " ";
             cboMedida.Text = " ";
             cboTipo.Text = " ";
+        }
+
+        private void cboProveedor_SelectedIndexChanged (object sender, EventArgs e)
+        {
+
         }
     }
 }

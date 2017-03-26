@@ -45,6 +45,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtCod = new System.Windows.Forms.TextBox();
             this.cboMedida = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cboProveedor = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +74,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(177, 230);
+            this.txtName.Location = new System.Drawing.Point(177, 279);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(149, 20);
             this.txtName.TabIndex = 44;
@@ -81,7 +83,7 @@
             // 
             this.cboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipo.FormattingEnabled = true;
-            this.cboTipo.Location = new System.Drawing.Point(177, 184);
+            this.cboTipo.Location = new System.Drawing.Point(177, 233);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(149, 21);
             this.cboTipo.TabIndex = 43;
@@ -100,7 +102,7 @@
             // btnAddCou
             // 
             this.btnAddCou.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCou.Location = new System.Drawing.Point(119, 429);
+            this.btnAddCou.Location = new System.Drawing.Point(108, 476);
             this.btnAddCou.Name = "btnAddCou";
             this.btnAddCou.Size = new System.Drawing.Size(110, 34);
             this.btnAddCou.TabIndex = 45;
@@ -112,7 +114,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 333);
+            this.label2.Location = new System.Drawing.Point(21, 382);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 19);
             this.label2.TabIndex = 47;
@@ -122,7 +124,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 280);
+            this.label3.Location = new System.Drawing.Point(21, 329);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(117, 19);
             this.label3.TabIndex = 48;
@@ -132,7 +134,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 377);
+            this.label4.Location = new System.Drawing.Point(21, 426);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 19);
             this.label4.TabIndex = 49;
@@ -142,7 +144,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(21, 186);
+            this.label5.Location = new System.Drawing.Point(21, 235);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 19);
             this.label5.TabIndex = 50;
@@ -150,21 +152,21 @@
             // 
             // txtCosto
             // 
-            this.txtCosto.Location = new System.Drawing.Point(177, 279);
+            this.txtCosto.Location = new System.Drawing.Point(177, 328);
             this.txtCosto.Name = "txtCosto";
             this.txtCosto.Size = new System.Drawing.Size(149, 20);
             this.txtCosto.TabIndex = 51;
             // 
             // txtSale
             // 
-            this.txtSale.Location = new System.Drawing.Point(177, 332);
+            this.txtSale.Location = new System.Drawing.Point(177, 381);
             this.txtSale.Name = "txtSale";
             this.txtSale.Size = new System.Drawing.Size(149, 20);
             this.txtSale.TabIndex = 52;
             // 
             // txtPeso
             // 
-            this.txtPeso.Location = new System.Drawing.Point(173, 378);
+            this.txtPeso.Location = new System.Drawing.Point(173, 427);
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(69, 20);
             this.txtPeso.TabIndex = 53;
@@ -174,7 +176,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(21, 231);
+            this.label7.Location = new System.Drawing.Point(21, 280);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 19);
             this.label7.TabIndex = 54;
@@ -198,17 +200,40 @@
             "MiliLitro",
             "Metro",
             "Centímetro"});
-            this.cboMedida.Location = new System.Drawing.Point(261, 378);
+            this.cboMedida.Location = new System.Drawing.Point(261, 427);
             this.cboMedida.Name = "cboMedida";
             this.cboMedida.Size = new System.Drawing.Size(65, 21);
             this.cboMedida.TabIndex = 56;
             this.cboMedida.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(21, 182);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 19);
+            this.label8.TabIndex = 57;
+            this.label8.Text = "Proveedor:";
+            // 
+            // cboProveedor
+            // 
+            this.cboProveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboProveedor.FormattingEnabled = true;
+            this.cboProveedor.Location = new System.Drawing.Point(177, 180);
+            this.cboProveedor.Name = "cboProveedor";
+            this.cboProveedor.Size = new System.Drawing.Size(149, 21);
+            this.cboProveedor.TabIndex = 58;
+            this.cboProveedor.SelectedIndexChanged += new System.EventHandler(this.cboProveedor_SelectedIndexChanged);
+            this.cboProveedor.Click += new System.EventHandler(this.cboProveedor_SelectedIndexChanged);
+            // 
             // FrmProductocs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 475);
+            this.ClientSize = new System.Drawing.Size(363, 526);
+            this.Controls.Add(this.cboProveedor);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.cboMedida);
             this.Controls.Add(this.txtCod);
             this.Controls.Add(this.label7);
@@ -253,5 +278,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtCod;
         private System.Windows.Forms.ComboBox cboMedida;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cboProveedor;
     }
 }

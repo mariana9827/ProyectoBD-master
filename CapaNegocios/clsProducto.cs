@@ -15,11 +15,16 @@ namespace CapaNegocios
             return categoria.cargarCategorias();
         }
      
-        public bool insertarProd (int codigo, float precio, float peso, float costo, String nombre, int tipo, String medidas )
+        public bool insertarProd (int codigo, float precio, float peso, float costo, String nombre, int tipo, String medidas,int identificacion )
         {
-            return new CapaDatos.clsProducto().insertarProductos(codigo,precio,peso,costo,nombre,tipo, medidas);
+            return new CapaDatos.clsProducto().insertarProductos(codigo,precio,peso,costo,nombre,tipo, medidas, identificacion);
         }
 
+        //public DataTable llenarPersona ()
+        //{
+        //    CapaDatos.clsProducto persona = new CapaDatos.clsProducto();
+        //    return persona.cargarProveedors();
+        //}
     }
     
 }

@@ -38,6 +38,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.nupCantidad = new System.Windows.Forms.NumericUpDown();
             this.dgvVentas = new System.Windows.Forms.DataGridView();
+            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Peso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoría = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.dtFecha = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -46,12 +52,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnInsertar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Peso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Categoría = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
@@ -97,6 +97,7 @@
             this.cboCliente.Name = "cboCliente";
             this.cboCliente.Size = new System.Drawing.Size(127, 21);
             this.cboCliente.TabIndex = 83;
+            this.cboCliente.Click += new System.EventHandler(this.cboCliente_SelectedIndexChanged);
             // 
             // cboProd
             // 
@@ -154,6 +155,42 @@
             this.dgvVentas.Size = new System.Drawing.Size(644, 257);
             this.dgvVentas.TabIndex = 87;
             // 
+            // IdProducto
+            // 
+            this.IdProducto.HeaderText = "ID Producto";
+            this.IdProducto.Name = "IdProducto";
+            this.IdProducto.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // Peso
+            // 
+            this.Peso.HeaderText = "Peso";
+            this.Peso.Name = "Peso";
+            this.Peso.ReadOnly = true;
+            // 
+            // NombreProducto
+            // 
+            this.NombreProducto.HeaderText = "Nombre";
+            this.NombreProducto.Name = "NombreProducto";
+            this.NombreProducto.ReadOnly = true;
+            // 
+            // Categoría
+            // 
+            this.Categoría.HeaderText = "Categoría";
+            this.Categoría.Name = "Categoría";
+            this.Categoría.ReadOnly = true;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -193,9 +230,9 @@
             this.lbValor.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbValor.Location = new System.Drawing.Point(101, 226);
             this.lbValor.Name = "lbValor";
-            this.lbValor.Size = new System.Drawing.Size(18, 26);
+            this.lbValor.Size = new System.Drawing.Size(23, 26);
             this.lbValor.TabIndex = 92;
-            this.lbValor.Text = ".";
+            this.lbValor.Text = "0";
             // 
             // label5
             // 
@@ -238,42 +275,6 @@
             this.groupBox2.Size = new System.Drawing.Size(386, 172);
             this.groupBox2.TabIndex = 91;
             this.groupBox2.TabStop = false;
-            // 
-            // IdProducto
-            // 
-            this.IdProducto.HeaderText = "ID Producto";
-            this.IdProducto.Name = "IdProducto";
-            this.IdProducto.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // Peso
-            // 
-            this.Peso.HeaderText = "Peso";
-            this.Peso.Name = "Peso";
-            this.Peso.ReadOnly = true;
-            // 
-            // NombreProducto
-            // 
-            this.NombreProducto.HeaderText = "Nombre";
-            this.NombreProducto.Name = "NombreProducto";
-            this.NombreProducto.ReadOnly = true;
-            // 
-            // Categoría
-            // 
-            this.Categoría.HeaderText = "Categoría";
-            this.Categoría.Name = "Categoría";
-            this.Categoría.ReadOnly = true;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
             // 
             // FrmVentas
             // 

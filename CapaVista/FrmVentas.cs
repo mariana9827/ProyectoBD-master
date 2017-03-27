@@ -39,6 +39,8 @@ namespace CapaVista
                     if (prod.Cells["IdProducto"].Value.ToString().Equals(cboProd.SelectedValue.ToString()))
                     {
                         prod.Cells["Cantidad"].Value = (int)prod.Cells["Cantidad"].Value+(int)nupCantidad.Value;
+                        
+                        lbValor.Text = "" + total();
                         return;
                     }
                 }
@@ -46,6 +48,29 @@ namespace CapaVista
                 dgvVentas.Rows.Add(oDT.Rows[0]["Id Producto"], oDT.Rows[0]["Precio"], oDT.Rows[0]["Peso"], oDT.Rows[0]["Nombre"],oDT.Rows[0]["Categoría"], (int)nupCantidad.Value);
 
             }
+            
+            lbValor.Text = ""+total();
+        }
+
+        private void cboCliente_SelectedIndexChanged (object sender, EventArgs e)
+        {
+            CapaNegocios.clsReporteClientes clientes = new CapaNegocios.clsReporteClientes();
+            DataTable dtClientes;
+
+            dtClientes = clientes.llenarDTGClientes();
+            cboCliente.DataSource = dtClientes;
+            cboCliente.DisplayMember = "Nombre";
+            cboCliente.ValueMember = "Identificación";
+        }
+
+        public int total ()
+        {
+            int acumTotal=0;
+            foreach (DataGridViewRow total in dgvVentas.Rows)
+            {
+                acumTotal += Convert.ToInt32(total.Cells["Cantidad"].Value) * Convert.ToInt32(total.Cells["Precio"].Value);
+            }
+            return acumTotal;
         }
     }
 }

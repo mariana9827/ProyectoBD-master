@@ -17,17 +17,17 @@ namespace CapaDatos
             return dtCategoria;
         }
 
-        public bool insertarProductos (int codigo, float precio, float peso, float costo, String nombre, int tipo, String medida, int identificacion)
+        public bool insertarProductos (int codigo, float precio, float peso, float costo, String nombre, int tipo, String medida, int identificacion, int cantidad)
         {
             CapaDatos.clsConexion conexion = new CapaDatos.clsConexion();
-            return conexion.ejecutarInsert("INSERT INTO dbo.Producto(Id_Producto,Activo,Precio,Peso,Costo,Nombre,Id_Tipo,Medida,Id_Persona)VALUES(" + codigo + ",1," + precio + "," + peso + "," + costo + ",'" + nombre + "'," + tipo + ",'" + medida + "'," + identificacion + ")");
+            return conexion.ejecutarInsert("INSERT INTO dbo.Producto(Id_Producto,Activo,Precio,Peso,Costo,Nombre,Id_Tipo,Medida,Id_Persona, Cantidad)VALUES(" + codigo + ",1," + precio + "," + peso + "," + costo + ",'" + nombre + "'," + tipo + ",'" + medida + "'," + identificacion + ","+cantidad+")");
         }
 
         public DataTable cargarProveedor()
         {
             CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
             DataTable dtPoveedor;
-            dtPoveedor= conecta.ejecutar("SELECT Activo,Descripcion,Id_Persona FROM dbo.Proveedor");
+            dtPoveedor= conecta.ejecutar("SELECT Activo,Descripcion,Id_Persona,Nombre FROM dbo.Proveedor");
             return dtPoveedor;
         }
 

@@ -15,9 +15,9 @@ namespace CapaNegocios
             return categoria.cargarCategorias();
         }
      
-        public bool insertarProd (int codigo, float precio, float peso, float costo, String nombre, int tipo, String medidas,int identificacion )
+        public bool insertarProd (int codigo, float precio, float peso, float costo, String nombre, int tipo, String medidas,int identificacion, int cantidad )
         {
-            return new CapaDatos.clsProducto().insertarProductos(codigo,precio,peso,costo,nombre,tipo, medidas, identificacion);
+            return new CapaDatos.clsProducto().insertarProductos(codigo,precio,peso,costo,nombre,tipo, medidas, identificacion, cantidad);
         }
 
         public DataTable llenarPersona ()

@@ -303,6 +303,16 @@ namespace CapaVista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap multiple_users_silhouette1 {
+            get {
+                object obj = ResourceManager.GetObject("multiple-users-silhouette1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap person_add_icon_icons_com_50077 {
             get {
                 object obj = ResourceManager.GetObject("person-add_icon-icons.com_50077", resourceCulture);

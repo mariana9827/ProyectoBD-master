@@ -43,7 +43,7 @@ namespace CapaVista
         {
             CapaNegocios.clsProducto producto = new CapaNegocios.clsProducto();
 
-            if (producto.insertarProd(Int32.Parse(txtCod.Text), float.Parse(txtSale.Text), float.Parse(txtPeso.Text), float.Parse(txtCosto.Text), txtName.Text, int.Parse(cboTipo.SelectedValue.ToString()), cboMedida.Text,int.Parse(cboProveedor.SelectedValue.ToString())))
+            if (producto.insertarProd(Int32.Parse(txtCod.Text), float.Parse(txtSale.Text), float.Parse(txtPeso.Text), float.Parse(txtCosto.Text), txtName.Text, int.Parse(cboTipo.SelectedValue.ToString()), cboMedida.Text,int.Parse(cboProveedor.SelectedValue.ToString()), Int32.Parse(txtCantidad.Text)))
             {
                 MessageBox.Show("Producto agregado");
                 limpiar();
@@ -79,7 +79,7 @@ namespace CapaVista
 
             dtProveedor = proveedor.llenarPersona();
             cboProveedor.DataSource = dtProveedor;
-            cboProveedor.DisplayMember = "Id_Persona";
+            cboProveedor.DisplayMember = "Nombre";
             cboProveedor.ValueMember = "Id_Persona";
         }
 

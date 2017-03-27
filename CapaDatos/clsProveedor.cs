@@ -24,7 +24,7 @@ namespace CapaDatos
             bool creadoPersona, creadoNacional, creadoProveedor;
 
             creadoPersona = conect.ejecutarInsert("INSERT INTO dbo.Persona(Activo,Id_Persona,Id_TipoPersona) values (1," + identificacion + ", 1)");
-            creadoProveedor=conect.ejecutarInsert("INSERT INTO dbo.Proveedor(Activo,Descripcion,Id_Persona)Values(1,'" + descripcion + "'," + identificacion + ")");
+            creadoProveedor=conect.ejecutarInsert("INSERT INTO dbo.Proveedor(Activo,Descripcion,Id_Persona,Nombre)Values(1,'" + descripcion + "'," + identificacion + ",'"+nombre+"')");
             creadoNacional = conect.ejecutarInsert("INSERT INTO dbo.Nacional (Nombre,Apellido1,Apellido2,Genero,Id_Persona) Values('" + nombre + "','" + apellido1 + "','" + apellido2 + "'," + genero + "," + identificacion + ")");
 
             if (creadoPersona && creadoNacional && creadoProveedor)
@@ -41,7 +41,7 @@ namespace CapaDatos
             bool creadoPersona, creadoExtranjero, creadoProveedor;
 
             creadoPersona = conect.ejecutarInsert("INSERT INTO dbo.Persona(Activo,Id_Persona,Id_TipoPersona) values (1," + identificacion + ",2)");
-            creadoProveedor = conect.ejecutarInsert("INSERT INTO dbo.Proveedor(Activo,Descripcion,Id_Persona)Values(1,'" + descripcion + "'," + identificacion + ")");
+            creadoProveedor = conect.ejecutarInsert("INSERT INTO dbo.Proveedor(Activo,Descripcion,Id_Persona,Nombre)Values(1,'" + descripcion + "'," + identificacion + ",'"+nombre+"')");
             creadoExtranjero = conect.ejecutarInsert("INSERT INTO dbo.Extranjera(Nombre,Apellido1,Apellido2,Genero,Id_Persona) Values('" + nombre + "','" + apellido1 + "','" + apellido2 + "'," + genero + "," + identificacion + ")");
 
             if (creadoPersona && creadoExtranjero && creadoProveedor)
@@ -58,7 +58,7 @@ namespace CapaDatos
             bool creadoPersona, creadoJuridico, creadoProveedor;
 
             creadoPersona = conect.ejecutarInsert("INSERT INTO dbo.Persona(Activo,Id_Persona,Id_TipoPersona) values (1," + identificacion + ", 3)");
-            creadoProveedor = conect.ejecutarInsert("INSERT INTO dbo.Proveedor(Activo,Descripcion,Id_Persona)Values(1,'" + descripcion + "'," + identificacion + ")");
+            creadoProveedor = conect.ejecutarInsert("INSERT INTO dbo.Proveedor(Activo,Descripcion,Id_Persona,Nombre)Values(1,'" + descripcion + "'," + identificacion + ",'" + nombre + "')");
             creadoJuridico = conect.ejecutarInsert("INSERT INTO dbo.Juridica(Descripcion, Nombre, Id_Persona) VALUES('" + descripcion + "','" + nombre + "'," + identificacion + ")");
 
             if (creadoPersona && creadoJuridico && creadoProveedor)

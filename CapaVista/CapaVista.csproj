@@ -251,5 +251,8 @@
   <ItemGroup>
     <None Include="Resources\plus_icon-icons.com_69985.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple-users-silhouette1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

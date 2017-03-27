@@ -106,7 +106,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(206, 330);
+            this.txtName.Location = new System.Drawing.Point(206, 225);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(138, 20);
             this.txtName.TabIndex = 5;
@@ -120,7 +120,7 @@
             // 
             // txtApe2
             // 
-            this.txtApe2.Location = new System.Drawing.Point(206, 225);
+            this.txtApe2.Location = new System.Drawing.Point(206, 328);
             this.txtApe2.Name = "txtApe2";
             this.txtApe2.Size = new System.Drawing.Size(138, 20);
             this.txtApe2.TabIndex = 7;
@@ -146,7 +146,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(112, 24);
+            this.label6.Location = new System.Drawing.Point(168, 24);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 26);
             this.label6.TabIndex = 15;
@@ -246,7 +246,7 @@
             // 
             this.pictureBox1.Image = global::CapaVista.Properties.Resources.person_add_icon_icons_com_50077;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(40, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(96, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -260,13 +260,13 @@
             this.ClientSize = new System.Drawing.Size(434, 511);
             this.Controls.Add(this.lbExtran);
             this.Controls.Add(this.gbGenre);
+            this.Controls.Add(this.txtApe2);
             this.Controls.Add(this.gbPerson);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtId);
-            this.Controls.Add(this.txtApe2);
             this.Controls.Add(this.txtApe1);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label5);

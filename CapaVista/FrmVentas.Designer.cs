@@ -62,7 +62,6 @@
             this.lbDes.Size = new System.Drawing.Size(60, 19);
             this.lbDes.TabIndex = 80;
             this.lbDes.Text = "Cliente:";
-            this.lbDes.Visible = false;
             // 
             // label6
             // 
@@ -100,7 +99,7 @@
             this.cboProd.Name = "cboProd";
             this.cboProd.Size = new System.Drawing.Size(121, 21);
             this.cboProd.TabIndex = 84;
-            this.cboProd.SelectedIndexChanged += new System.EventHandler(this.cboProd_SelectedIndexChanged);
+            this.cboProd.Click += new System.EventHandler(this.cboProd_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -111,7 +110,6 @@
             this.label1.Size = new System.Drawing.Size(75, 19);
             this.label1.TabIndex = 80;
             this.label1.Text = "Producto:";
-            this.label1.Visible = false;
             // 
             // label2
             // 
@@ -122,7 +120,6 @@
             this.label2.Size = new System.Drawing.Size(74, 19);
             this.label2.TabIndex = 85;
             this.label2.Text = "Cantidad:";
-            this.label2.Visible = false;
             // 
             // nupCantidad
             // 
@@ -150,7 +147,6 @@
             this.label3.Size = new System.Drawing.Size(94, 19);
             this.label3.TabIndex = 88;
             this.label3.Text = "Fecha Venta:";
-            this.label3.Visible = false;
             // 
             // dtFecha
             // 

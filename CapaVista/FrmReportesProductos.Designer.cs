@@ -1,6 +1,6 @@
 ﻿namespace CapaVista
 {
-    partial class FrmReporteCliente
+    partial class FrmReportesProductos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,46 +28,19 @@
         /// </summary>
         private void InitializeComponent ()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReporteCliente));
-            this.dgvProductos = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportesProductos));
             this.gbPerson = new System.Windows.Forms.GroupBox();
             this.rbTodos = new System.Windows.Forms.RadioButton();
             this.rbJuridico = new System.Windows.Forms.RadioButton();
             this.rbExtranjero = new System.Windows.Forms.RadioButton();
             this.rbNacionales = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dgvCliente = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.gbPerson.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvProductos
-            // 
-            this.dgvProductos.AllowUserToAddRows = false;
-            this.dgvProductos.AllowUserToDeleteRows = false;
-            this.dgvProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgvProductos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dgvProductos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductos.Location = new System.Drawing.Point(43, 190);
-            this.dgvProductos.Name = "dgvProductos";
-            this.dgvProductos.ReadOnly = true;
-            this.dgvProductos.ShowEditingIcon = false;
-            this.dgvProductos.Size = new System.Drawing.Size(489, 213);
-            this.dgvProductos.TabIndex = 0;
-            this.dgvProductos.Visible = false;
-            this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(296, 62);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 33);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Clientes";
             // 
             // gbPerson
             // 
@@ -76,10 +49,10 @@
             this.gbPerson.Controls.Add(this.rbExtranjero);
             this.gbPerson.Controls.Add(this.rbNacionales);
             this.gbPerson.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbPerson.Location = new System.Drawing.Point(79, 130);
+            this.gbPerson.Location = new System.Drawing.Point(142, 113);
             this.gbPerson.Name = "gbPerson";
-            this.gbPerson.Size = new System.Drawing.Size(394, 40);
-            this.gbPerson.TabIndex = 57;
+            this.gbPerson.Size = new System.Drawing.Size(373, 40);
+            this.gbPerson.TabIndex = 61;
             this.gbPerson.TabStop = false;
             // 
             // rbTodos
@@ -92,7 +65,6 @@
             this.rbTodos.TabStop = true;
             this.rbTodos.Text = "Todos";
             this.rbTodos.UseVisualStyleBackColor = true;
-            this.rbTodos.Click += new System.EventHandler(this.rbTodos_CheckedChanged);
             // 
             // rbJuridico
             // 
@@ -104,7 +76,6 @@
             this.rbJuridico.TabStop = true;
             this.rbJuridico.Text = "Jurídicos";
             this.rbJuridico.UseVisualStyleBackColor = true;
-            this.rbJuridico.CheckedChanged += new System.EventHandler(this.rbJuridico_CheckedChanged);
             // 
             // rbExtranjero
             // 
@@ -116,7 +87,6 @@
             this.rbExtranjero.TabStop = true;
             this.rbExtranjero.Text = "Extranjeros";
             this.rbExtranjero.UseVisualStyleBackColor = true;
-            this.rbExtranjero.CheckedChanged += new System.EventHandler(this.rbExtranjero_CheckedChanged);
             // 
             // rbNacionales
             // 
@@ -128,35 +98,60 @@
             this.rbNacionales.TabStop = true;
             this.rbNacionales.Text = "Nacionales";
             this.rbNacionales.UseVisualStyleBackColor = true;
-            this.rbNacionales.Click += new System.EventHandler(this.rbNacionales_CheckedChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(332, 74);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(127, 33);
+            this.label6.TabIndex = 60;
+            this.label6.Text = "Productos";
+            // 
+            // dgvCliente
+            // 
+            this.dgvCliente.AllowUserToAddRows = false;
+            this.dgvCliente.AllowUserToDeleteRows = false;
+            this.dgvCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvCliente.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dgvCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCliente.Location = new System.Drawing.Point(22, 169);
+            this.dgvCliente.Name = "dgvCliente";
+            this.dgvCliente.ReadOnly = true;
+            this.dgvCliente.ShowEditingIcon = false;
+            this.dgvCliente.Size = new System.Drawing.Size(677, 213);
+            this.dgvCliente.TabIndex = 58;
+            this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CapaVista.Properties.Resources.multiple_users_silhouette1;
+            this.pictureBox1.Image = global::CapaVista.Properties.Resources.cart12;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(176, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(227, 29);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(122, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabIndex = 59;
             this.pictureBox1.TabStop = false;
             // 
-            // FrmReporteCliente
+            // FrmReportesProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(567, 447);
+            this.ClientSize = new System.Drawing.Size(721, 416);
             this.Controls.Add(this.gbPerson);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dgvProductos);
+            this.Controls.Add(this.dgvCliente);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmReporteCliente";
-            this.Text = "Reporte Cliente";
-            this.Load += new System.EventHandler(this.rbTodos_CheckedChanged);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
+            this.Name = "FrmReportesProductos";
+            this.Text = "Reportes Productos";
+            this.Load += new System.EventHandler(this.FrmReportesProductos_Load);
             this.gbPerson.ResumeLayout(false);
             this.gbPerson.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -165,13 +160,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvProductos;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox gbPerson;
         private System.Windows.Forms.RadioButton rbTodos;
         private System.Windows.Forms.RadioButton rbJuridico;
         private System.Windows.Forms.RadioButton rbExtranjero;
         private System.Windows.Forms.RadioButton rbNacionales;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dgvCliente;
     }
 }

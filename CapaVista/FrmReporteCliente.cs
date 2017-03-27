@@ -31,12 +31,12 @@ namespace CapaVista
         {
             if (rbTodos.Checked)
             {
-                dgvCliente.Visible = true;
+                dgvProductos.Visible = true;
                 CapaNegocios.clsReporteClientes reporteCliente = new CapaNegocios.clsReporteClientes();
                 DataTable dtrepCliente = new DataTable();
 
                 dtrepCliente = reporteCliente.llenarDTGClientes();
-                dgvCliente.DataSource = dtrepCliente;
+                dgvProductos.DataSource = dtrepCliente;
             }
   
         }
@@ -46,12 +46,12 @@ namespace CapaVista
         {
             if (rbNacionales.Checked)
             {
-                dgvCliente.Visible = true;
+                dgvProductos.Visible = true;
                 CapaNegocios.clsReporteClientes reporteClienteNac = new CapaNegocios.clsReporteClientes();
                 DataTable dtrepClienteNac = new DataTable();
 
                 dtrepClienteNac= reporteClienteNac.llenarDTGClientesNac();
-                dgvCliente.DataSource = dtrepClienteNac;
+                dgvProductos.DataSource = dtrepClienteNac;
             }
         }
 
@@ -59,12 +59,12 @@ namespace CapaVista
         {
             if (rbJuridico.Checked)
             {
-                dgvCliente.Visible = true;
+                dgvProductos.Visible = true;
                 CapaNegocios.clsReporteClientes reporteClienteJur = new CapaNegocios.clsReporteClientes();
                 DataTable dtrepClienteJur = new DataTable();
 
                 dtrepClienteJur = reporteClienteJur.llenarDTGClientesJur();
-                dgvCliente.DataSource = dtrepClienteJur;
+                dgvProductos.DataSource = dtrepClienteJur;
             }
         }
 
@@ -72,12 +72,12 @@ namespace CapaVista
         {
             if (rbExtranjero.Checked)
             {
-                dgvCliente.Visible = true;
+                dgvProductos.Visible = true;
                 CapaNegocios.clsReporteClientes reporteClienteExt = new CapaNegocios.clsReporteClientes();
                 DataTable dtrepClienteExt = new DataTable();
 
                 dtrepClienteExt = reporteClienteExt.llenarDTGClientesExt();
-                dgvCliente.DataSource = dtrepClienteExt;
+                dgvProductos.DataSource = dtrepClienteExt;
             }
         }
     }

@@ -178,5 +178,11 @@ namespace CapaVista
             FrmReporteCliente reporCliente = new FrmReporteCliente();
             reporCliente.Show();
         }
+
+        private void productosToolStripMenuItem_Click (object sender, EventArgs e)
+        {
+            FrmReportesProductos reportProductos = new FrmReportesProductos();
+            reportProductos.Show();
+        }
     }
 }

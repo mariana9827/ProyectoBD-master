@@ -87,6 +87,12 @@
     <Compile Include="FrmReporteCliente.Designer.cs">
       <DependentUpon>FrmReporteCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReportesProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportesProductos.Designer.cs">
+      <DependentUpon>FrmReportesProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProyectoBDDataSet.Designer.cs">
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReporteCliente.resx">
       <DependentUpon>FrmReporteCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportesProductos.resx">
+      <DependentUpon>FrmReportesProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

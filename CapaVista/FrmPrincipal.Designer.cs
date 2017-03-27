@@ -51,7 +51,6 @@
             this.paqueteriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,18 +71,13 @@
             this.toolStripMenuItem19 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem20 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem21 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem22 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem23 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem24 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem25 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem26 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem27 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem28 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem29 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem30 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem31 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem32 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem33 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -110,7 +104,7 @@
             this.menuStrip1.Margin = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(713, 119);
+            this.menuStrip1.Size = new System.Drawing.Size(734, 119);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "MenuStrip";
             // 
@@ -123,7 +117,6 @@
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnCliente,
             this.ventaToolStripMenuItem,
-            this.toolStripMenuItem22,
             this.btnReports,
             this.toolStripMenuItem1,
             this.toolStripMenuItem12,
@@ -133,7 +126,7 @@
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip.Size = new System.Drawing.Size(156, 580);
+            this.menuStrip.Size = new System.Drawing.Size(156, 410);
             this.menuStrip.TabIndex = 4;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -209,6 +202,7 @@
             this.nuevoToolStripMenuItem1.Name = "nuevoToolStripMenuItem1";
             this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(211, 28);
             this.nuevoToolStripMenuItem1.Text = "Nuevo";
+            this.nuevoToolStripMenuItem1.Click += new System.EventHandler(this.nuevoToolStripMenuItem1_Click);
             // 
             // clienteExistenteToolStripMenuItem
             // 
@@ -227,7 +221,7 @@
             // ventaToolStripMenuItem
             // 
             this.ventaToolStripMenuItem.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ventaToolStripMenuItem.Image = global::CapaVista.Properties.Resources.carduse_card_payment_5122;
+            this.ventaToolStripMenuItem.Image = global::CapaVista.Properties.Resources.coins_stacks_money_icon_icons2;
             this.ventaToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 40, 20, 40);
             this.ventaToolStripMenuItem.Name = "ventaToolStripMenuItem";
             this.ventaToolStripMenuItem.Size = new System.Drawing.Size(99, 27);
@@ -248,7 +242,7 @@
             this.btnReports.Name = "btnReports";
             this.btnReports.Padding = new System.Windows.Forms.Padding(4);
             this.btnReports.Size = new System.Drawing.Size(99, 35);
-            this.btnReports.Text = "Abonos";
+            this.btnReports.Text = "Reportes";
             // 
             // clientesToolStripMenuItem1
             // 
@@ -287,17 +281,6 @@
             this.productosToolStripMenuItem.Size = new System.Drawing.Size(229, 28);
             this.productosToolStripMenuItem.Text = "Productos";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(62)))), ((int)(((byte)(59)))));
-            this.pictureBox1.Image = global::CapaVista.Properties.Resources.delivery_packages_on_a_trolley__3_;
-            this.pictureBox1.Location = new System.Drawing.Point(169, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(127, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // toolStripMenuItem1
             // 
@@ -463,57 +446,6 @@
             this.toolStripMenuItem21.Size = new System.Drawing.Size(160, 28);
             this.toolStripMenuItem21.Text = "Courrier";
             // 
-            // toolStripMenuItem22
-            // 
-            this.toolStripMenuItem22.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem23,
-            this.toolStripMenuItem24,
-            this.toolStripMenuItem25,
-            this.toolStripMenuItem26,
-            this.toolStripMenuItem27});
-            this.toolStripMenuItem22.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem22.Image = global::CapaVista.Properties.Resources._27799;
-            this.toolStripMenuItem22.Margin = new System.Windows.Forms.Padding(20, 40, 20, 40);
-            this.toolStripMenuItem22.Name = "toolStripMenuItem22";
-            this.toolStripMenuItem22.Padding = new System.Windows.Forms.Padding(4);
-            this.toolStripMenuItem22.Size = new System.Drawing.Size(99, 35);
-            this.toolStripMenuItem22.Text = "Reportes";
-            // 
-            // toolStripMenuItem23
-            // 
-            this.toolStripMenuItem23.Image = global::CapaVista.Properties.Resources._7b5f65_12de7cffa2f7494a9abfc5547d98718a;
-            this.toolStripMenuItem23.Name = "toolStripMenuItem23";
-            this.toolStripMenuItem23.Size = new System.Drawing.Size(229, 28);
-            this.toolStripMenuItem23.Text = "Clientes";
-            // 
-            // toolStripMenuItem24
-            // 
-            this.toolStripMenuItem24.Image = global::CapaVista.Properties.Resources.coins_stacks_money_icon_icons_com_56191;
-            this.toolStripMenuItem24.Name = "toolStripMenuItem24";
-            this.toolStripMenuItem24.Size = new System.Drawing.Size(229, 28);
-            this.toolStripMenuItem24.Text = "Cuentas por Cobrar";
-            // 
-            // toolStripMenuItem25
-            // 
-            this.toolStripMenuItem25.Image = global::CapaVista.Properties.Resources.drop_box_online_social_media_icon_icons_com_71865;
-            this.toolStripMenuItem25.Name = "toolStripMenuItem25";
-            this.toolStripMenuItem25.Size = new System.Drawing.Size(229, 28);
-            this.toolStripMenuItem25.Text = "Paqueteria";
-            // 
-            // toolStripMenuItem26
-            // 
-            this.toolStripMenuItem26.Image = global::CapaVista.Properties.Resources.phone_call_icon_icons_com_63771;
-            this.toolStripMenuItem26.Name = "toolStripMenuItem26";
-            this.toolStripMenuItem26.Size = new System.Drawing.Size(229, 28);
-            this.toolStripMenuItem26.Text = "Proveedores";
-            // 
-            // toolStripMenuItem27
-            // 
-            this.toolStripMenuItem27.Image = global::CapaVista.Properties.Resources.cart12;
-            this.toolStripMenuItem27.Name = "toolStripMenuItem27";
-            this.toolStripMenuItem27.Size = new System.Drawing.Size(229, 28);
-            this.toolStripMenuItem27.Text = "Productos";
-            // 
             // toolStripMenuItem28
             // 
             this.toolStripMenuItem28.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -565,13 +497,24 @@
             this.toolStripMenuItem33.Size = new System.Drawing.Size(229, 28);
             this.toolStripMenuItem33.Text = "Productos";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(62)))), ((int)(((byte)(59)))));
+            this.pictureBox1.Image = global::CapaVista.Properties.Resources.delivery_packages_on_a_trolley__3_;
+            this.pictureBox1.Location = new System.Drawing.Point(169, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 93);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(713, 699);
+            this.ClientSize = new System.Drawing.Size(734, 529);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
@@ -617,12 +560,6 @@
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem clienteExistenteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem courrierToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem22;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem23;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem24;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem25;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem26;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem27;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;

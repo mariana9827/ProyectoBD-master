@@ -121,6 +121,9 @@
   <data name="delivery-packages-on-a-trolley" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delivery-packages-on-a-trolley.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="carduse_card_payment_5122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carduse_card_payment_5122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="multiple-users-silhouette (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multiple-users-silhouette (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,11 +139,11 @@
   <data name="1486146612-propertyagent002_79450" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1486146612-propertyagent002_79450.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="phone-call_icon-icons.com_63771" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone-call_icon-icons.com_63771.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="plus_icon-icons.com_69476" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plus_icon-icons.com_69476.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="message" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\message.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="drop_box_online_social_media_icon-icons.com_71865" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\drop_box_online_social_media_icon-icons.com_71865.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -165,9 +168,6 @@
   </data>
   <data name="delivery-packages-on-a-trolley (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delivery-packages-on-a-trolley (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coins-stacks-money_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coins-stacks-money_icon-icons.com_561911.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shopping-cart-with-an-arrow_icon-icons.com_56122" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopping-cart-with-an-arrow_icon-icons.com_56122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,8 +196,11 @@
   <data name="delivery-packages-on-a-trolley (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delivery-packages-on-a-trolley (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carduse_card_payment_5122" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carduse_card_payment_5122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="carduse_card_payment_51221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carduse_card_payment_51221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coins-stacks-money_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coins-stacks-money_icon-icons.com_561911.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="multiple-users-silhouette1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multiple-users-silhouette1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,10 +223,10 @@
   <data name="man-with-company" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\man-with-company.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="phone-call_icon-icons.com_63771" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phone-call_icon-icons.com_63771.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="message" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\message.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carduse_card_payment_51221" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carduse_card_payment_51221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coins-stacks-money_icon-icons2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coins-stacks-money_icon-icons.com_561912.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

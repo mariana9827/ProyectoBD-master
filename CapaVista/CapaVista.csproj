@@ -308,5 +308,8 @@
   <ItemGroup>
     <None Include="Resources\carduse_card_payment_51221.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins-stacks-money_icon-icons.com_561912.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

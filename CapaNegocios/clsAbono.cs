@@ -8,10 +8,10 @@ namespace CapaNegocios
 {
     public class clsAbono
     {
-        public bool insertarAbono (int identificacion, float monto, DateTime fecha, float saldo)
+        public bool insertarAbono (int identificacion, float monto, DateTime fecha, float saldo, int factura)
         {
 
-            return new CapaNegocios.clsAbono().insertarAbono(identificacion, monto, fecha, saldo);
+            return new CapaNegocios.clsAbono().insertarAbono(identificacion, monto, fecha, saldo,factura);
         }
     }
 }

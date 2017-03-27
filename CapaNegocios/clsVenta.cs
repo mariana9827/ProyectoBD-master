@@ -9,9 +9,9 @@ namespace CapaNegocios
 {
     public  class clsVenta
     {
-        public bool realizarVenta (DateTime fecha, float precio, int identificacion)
+        public bool realizarFactura(DateTime fecha, float precio, int identificacion)
         {
-            return new CapaDatos.clsVenta().insertarVenta(fecha, precio, identificacion);
+            return new CapaDatos.clsVenta().insertarFactura(fecha, precio, identificacion);
         }
 
         public DataTable llenarDTGProdcs (int identificacion)

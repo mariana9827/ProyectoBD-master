@@ -207,5 +207,16 @@ namespace CapaVista
             FrmVentas ventas = new FrmVentas();
             ventas.Show();
         }
+
+        private void toolStripMenuItem22_Click (object sender, EventArgs e)
+        {
+
+        }
+
+        private void nuevoToolStripMenuItem1_Click (object sender, EventArgs e)
+        {
+            FrmCliente cliente = new FrmCliente();
+            cliente.MdiParent = this;
+        }
     }
 }

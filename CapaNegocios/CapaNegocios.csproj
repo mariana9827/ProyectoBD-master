@@ -43,6 +43,7 @@
     <Compile Include="clsAbono.cs" />
     <Compile Include="clsCliente.cs" />
     <Compile Include="clsCourrier.cs" />
+    <Compile Include="clsCredito.cs" />
     <Compile Include="clsLogin.cs" />
     <Compile Include="clsProducto.cs" />
     <Compile Include="clsProveedor.cs" />

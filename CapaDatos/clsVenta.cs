@@ -10,7 +10,7 @@ namespace CapaDatos
     public class clsVenta
 
     {
-        public bool insertarVenta (DateTime fecha, float precio, int identificacion)
+        public bool insertarFactura (DateTime fecha, float precio, int identificacion)
         {
             CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
             return conecta.ejecutarInsert("INSERT INTO dbo.Factura(FechaVenta,Activo,Precio,Id_Persona)VALUES('" + fecha.Year.ToString() + fecha.Month.ToString() + fecha.Day.ToString() + "',1," + precio + "," + identificacion + ")");

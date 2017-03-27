@@ -78,8 +78,7 @@ namespace CapaVista
             var result=MessageBox.Show("¿Seguro que deseea realizar la factura?","Confirmación",MessageBoxButtons.OKCancel);
             if (result == DialogResult.OK)
             {
-                FrmVentas ventas = new FrmVentas();
-                ventas.Show();
+                
                     
           } 
         }

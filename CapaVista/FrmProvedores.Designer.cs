@@ -81,7 +81,7 @@
             // 
             this.lbDes.AutoSize = true;
             this.lbDes.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDes.Location = new System.Drawing.Point(41, 195);
+            this.lbDes.Location = new System.Drawing.Point(41, 150);
             this.lbDes.Name = "lbDes";
             this.lbDes.Size = new System.Drawing.Size(91, 19);
             this.lbDes.TabIndex = 47;
@@ -102,7 +102,7 @@
             // 
             // txtDesc
             // 
-            this.txtDesc.Location = new System.Drawing.Point(194, 194);
+            this.txtDesc.Location = new System.Drawing.Point(194, 149);
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(138, 20);
             this.txtDesc.TabIndex = 53;
@@ -209,7 +209,7 @@
             // 
             this.lbId.AutoSize = true;
             this.lbId.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbId.Location = new System.Drawing.Point(41, 146);
+            this.lbId.Location = new System.Drawing.Point(41, 195);
             this.lbId.Name = "lbId";
             this.lbId.Size = new System.Drawing.Size(104, 19);
             this.lbId.TabIndex = 66;
@@ -218,7 +218,7 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(194, 149);
+            this.txtId.Location = new System.Drawing.Point(194, 196);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(138, 20);
             this.txtId.TabIndex = 65;

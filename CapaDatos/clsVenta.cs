@@ -1,16 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CapaDatos
 {
-   public class clsVenta
+    public class clsVenta
+
     {
-        public bool realizarVenta (DateTime fecha, float precio, int identificacion)
+        public bool insertarVenta (DateTime fecha, float precio, int identificacion)
         {
-            return new CapaDatos.clsVenta().realizarVenta(fecha, precio, identificacion);
+            CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
+            return conecta.ejecutarInsert("INSERT INTO dbo.Factura(FechaVenta,Activo,Precio,Id_Persona)VALUES('" + fecha.Year.ToString() + fecha.Month.ToString() + fecha.Day.ToString() + "',1," + precio + "," + identificacion + ")");
         }
+
+        public DataTable llenarProduct (int identificacion)
+        {
+            CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
+            DataTable dtProd;
+            dtProd = conecta.ejecutar("SELECT Id_Producto as 'Id Producto', Precio, Peso, Nombre, Id_Tipo as Categoría,Id_Persona as Identificación From dbo.Producto WHERE Id_Producto=(" + identificacion + ")");
+            return dtProd;
+        }
+       
     }
 }

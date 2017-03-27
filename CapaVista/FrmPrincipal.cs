@@ -140,15 +140,12 @@ namespace CapaVista
 
         private void currierToolStripMenuItem_Click (object sender, EventArgs e)
         {
-            FrmCourrier courrier = new FrmCourrier();
-            courrier.Show();
-            
+         
         }
 
         private void nacionalExtranjeroToolStripMenuItem_Click_1 (object sender, EventArgs e)
         {
-            FrmCliente cliente = new FrmCliente();
-            cliente.Show();
+         
         }
 
         private void jurídicaToolStripMenuItem_Click (object sender, EventArgs e)
@@ -175,6 +172,7 @@ namespace CapaVista
 
         private void clientesToolStripMenuItem1_Click (object sender, EventArgs e)
         {
+           
             FrmReporteCliente reporCliente = new FrmReporteCliente();
             reporCliente.Show();
         }
@@ -183,6 +181,31 @@ namespace CapaVista
         {
             FrmReportesProductos reportProductos = new FrmReportesProductos();
             reportProductos.Show();
+        }
+
+        private void proveedoresToolStripMenuItem1_Click (object sender, EventArgs e)
+        {
+            FrmReporteProveedores reporProvee= new FrmReporteProveedores();
+            reporProvee.Show();
+        }
+
+        private void agregarToolStripMenuItem_Click_1 (object sender, EventArgs e)
+        {
+            FrmCliente cliente = new FrmCliente();
+            cliente.Show();
+        }
+
+        private void courrierToolStripMenuItem_Click (object sender, EventArgs e)
+        {
+            FrmCourrier courrier = new FrmCourrier();
+            courrier.Show();
+
+        }
+
+        private void ventaToolStripMenuItem_Click (object sender, EventArgs e)
+        {
+            FrmVentas ventas = new FrmVentas();
+            ventas.Show();
         }
     }
 }

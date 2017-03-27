@@ -80,5 +80,10 @@ namespace CapaVista
                 dgvProductos.DataSource = dtrepClienteExt;
             }
         }
+
+        private void rbTodos_CheckedChanged_1 (object sender, EventArgs e)
+        {
+
+        }
     }
 }

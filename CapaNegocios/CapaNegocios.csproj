@@ -47,6 +47,8 @@
     <Compile Include="clsProveedor.cs" />
     <Compile Include="clsReporteClientes.cs" />
     <Compile Include="clsReporteProductos.cs" />
+    <Compile Include="clsReporteProveedores.cs" />
+    <Compile Include="clsVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

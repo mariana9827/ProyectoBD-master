@@ -69,9 +69,9 @@ namespace CapaVista
             lbApe1.Visible = true;
             lbApe2.Visible = true;
             lbGen.Visible = true;
-            lbDes.Visible = true;
+            lbDes.Visible = false;
             txtId.Visible = true;
-            txtDesc.Visible = true;
+            txtDesc.Visible = false;
             txtName.Visible = true;
             txtApe1.Visible = true;
             txtApe2.Visible = true;
@@ -87,9 +87,9 @@ namespace CapaVista
             lbApe1.Visible = true;
             lbApe2.Visible = true;
             lbGen.Visible = true;
-            lbDes.Visible = true;
+            lbDes.Visible = false;
             txtId.Visible = true;
-            txtDesc.Visible = true;
+            txtDesc.Visible = false;
             txtName.Visible = true;
             txtApe1.Visible = true;
             txtApe2.Visible = true;

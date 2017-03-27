@@ -36,13 +36,14 @@
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.btnCliente = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nacionalExtranjeroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jurídicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.currierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.juridicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteExistenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.courrierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnReports = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -104,8 +105,10 @@
             // 
             this.btnCliente.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarToolStripMenuItem,
+            this.proveedorToolStripMenuItem,
             this.productoToolStripMenuItem,
-            this.proveedorToolStripMenuItem});
+            this.juridicoToolStripMenuItem,
+            this.courrierToolStripMenuItem});
             this.btnCliente.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(16)))));
             this.btnCliente.Image = global::CapaVista.Properties.Resources.plus_icon_icons_com_69985;
@@ -117,46 +120,11 @@
             // 
             // agregarToolStripMenuItem
             // 
-            this.agregarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nacionalExtranjeroToolStripMenuItem,
-            this.jurídicaToolStripMenuItem,
-            this.currierToolStripMenuItem});
             this.agregarToolStripMenuItem.Image = global::CapaVista.Properties.Resources.person_add_icon_icons_com_50077;
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
             this.agregarToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
             this.agregarToolStripMenuItem.Text = "Cliente";
-            // 
-            // nacionalExtranjeroToolStripMenuItem
-            // 
-            this.nacionalExtranjeroToolStripMenuItem.Image = global::CapaVista.Properties.Resources.ios7_world_outline_icon_icons_com_50126;
-            this.nacionalExtranjeroToolStripMenuItem.Name = "nacionalExtranjeroToolStripMenuItem";
-            this.nacionalExtranjeroToolStripMenuItem.Size = new System.Drawing.Size(233, 28);
-            this.nacionalExtranjeroToolStripMenuItem.Text = "Nacional/Extranjero";
-            this.nacionalExtranjeroToolStripMenuItem.Click += new System.EventHandler(this.nacionalExtranjeroToolStripMenuItem_Click_1);
-            // 
-            // jurídicaToolStripMenuItem
-            // 
-            this.jurídicaToolStripMenuItem.Image = global::CapaVista.Properties.Resources.man_with_company1;
-            this.jurídicaToolStripMenuItem.Name = "jurídicaToolStripMenuItem";
-            this.jurídicaToolStripMenuItem.Size = new System.Drawing.Size(233, 28);
-            this.jurídicaToolStripMenuItem.Text = "Jurídico";
-            this.jurídicaToolStripMenuItem.Click += new System.EventHandler(this.jurídicaToolStripMenuItem_Click);
-            // 
-            // currierToolStripMenuItem
-            // 
-            this.currierToolStripMenuItem.Image = global::CapaVista.Properties.Resources.message;
-            this.currierToolStripMenuItem.Name = "currierToolStripMenuItem";
-            this.currierToolStripMenuItem.Size = new System.Drawing.Size(233, 28);
-            this.currierToolStripMenuItem.Text = "Courrier";
-            this.currierToolStripMenuItem.Click += new System.EventHandler(this.currierToolStripMenuItem_Click);
-            // 
-            // productoToolStripMenuItem
-            // 
-            this.productoToolStripMenuItem.Image = global::CapaVista.Properties.Resources.shopping_cart_add_button_icon_icons_com_56132;
-            this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
-            this.productoToolStripMenuItem.Text = "Producto";
-            this.productoToolStripMenuItem.Click += new System.EventHandler(this.productoToolStripMenuItem_Click);
+            this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click_1);
             // 
             // proveedorToolStripMenuItem
             // 
@@ -172,15 +140,53 @@
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(134, 28);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(211, 28);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(134, 28);
-            this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(211, 28);
+            this.clienteToolStripMenuItem.Text = "Cliente Existente";
+            // 
+            // productoToolStripMenuItem
+            // 
+            this.productoToolStripMenuItem.Image = global::CapaVista.Properties.Resources.shopping_cart_add_button_icon_icons_com_56132;
+            this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.productoToolStripMenuItem.Text = "Producto";
+            this.productoToolStripMenuItem.Click += new System.EventHandler(this.productoToolStripMenuItem_Click);
+            // 
+            // juridicoToolStripMenuItem
+            // 
+            this.juridicoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevoToolStripMenuItem1,
+            this.clienteExistenteToolStripMenuItem});
+            this.juridicoToolStripMenuItem.Image = global::CapaVista.Properties.Resources.man_with_company1;
+            this.juridicoToolStripMenuItem.Name = "juridicoToolStripMenuItem";
+            this.juridicoToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.juridicoToolStripMenuItem.Text = "Juridico";
+            // 
+            // nuevoToolStripMenuItem1
+            // 
+            this.nuevoToolStripMenuItem1.Name = "nuevoToolStripMenuItem1";
+            this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(211, 28);
+            this.nuevoToolStripMenuItem1.Text = "Nuevo";
+            // 
+            // clienteExistenteToolStripMenuItem
+            // 
+            this.clienteExistenteToolStripMenuItem.Name = "clienteExistenteToolStripMenuItem";
+            this.clienteExistenteToolStripMenuItem.Size = new System.Drawing.Size(211, 28);
+            this.clienteExistenteToolStripMenuItem.Text = "Cliente Existente";
+            // 
+            // courrierToolStripMenuItem
+            // 
+            this.courrierToolStripMenuItem.Image = global::CapaVista.Properties.Resources.message;
+            this.courrierToolStripMenuItem.Name = "courrierToolStripMenuItem";
+            this.courrierToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.courrierToolStripMenuItem.Text = "Courrier";
+            this.courrierToolStripMenuItem.Click += new System.EventHandler(this.courrierToolStripMenuItem_Click);
             // 
             // ventaToolStripMenuItem
             // 
@@ -190,6 +196,7 @@
             this.ventaToolStripMenuItem.Name = "ventaToolStripMenuItem";
             this.ventaToolStripMenuItem.Size = new System.Drawing.Size(99, 27);
             this.ventaToolStripMenuItem.Text = "Venta";
+            this.ventaToolStripMenuItem.Click += new System.EventHandler(this.ventaToolStripMenuItem_Click);
             // 
             // btnReports
             // 
@@ -235,6 +242,7 @@
             this.proveedoresToolStripMenuItem1.Name = "proveedoresToolStripMenuItem1";
             this.proveedoresToolStripMenuItem1.Size = new System.Drawing.Size(229, 28);
             this.proveedoresToolStripMenuItem1.Text = "Proveedores";
+            this.proveedoresToolStripMenuItem1.Click += new System.EventHandler(this.proveedoresToolStripMenuItem1_Click);
             // 
             // productosToolStripMenuItem
             // 
@@ -291,14 +299,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem btnCliente;
         private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nacionalExtranjeroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem jurídicaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btnReports;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem cuentasPorCobrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventaToolStripMenuItem;
         internal System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem currierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paqueteriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
@@ -306,6 +311,10 @@
         private System.Windows.Forms.ToolStripMenuItem proveedorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem juridicoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem clienteExistenteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem courrierToolStripMenuItem;
     }
 }
 

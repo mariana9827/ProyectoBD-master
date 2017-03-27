@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAbonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbonos.Designer.cs">
+      <DependentUpon>FrmAbonos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +62,12 @@
     </Compile>
     <Compile Include="FrmCourrier.Designer.cs">
       <DependentUpon>FrmCourrier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCredito.Designer.cs">
+      <DependentUpon>FrmCredito.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmJuridico.cs">
       <SubType>Form</SubType>
@@ -112,11 +124,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProyectoBDDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmAbonos.resx">
+      <DependentUpon>FrmAbonos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCliente.resx">
       <DependentUpon>FrmCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCourrier.resx">
       <DependentUpon>FrmCourrier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCredito.resx">
+      <DependentUpon>FrmCredito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmJuridico.resx">
       <DependentUpon>FrmJuridico.cs</DependentUpon>
@@ -280,6 +298,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\multiple-users-silhouette1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins-stacks-money_icon-icons.com_561911.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carduse_card_payment_51221.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -72,5 +72,25 @@ namespace CapaVista
             }
             return acumTotal;
         }
+
+        private void btnAdd_Click (object sender, EventArgs e)
+        {
+            var result=MessageBox.Show("¿Seguro que deseea realizar la factura?","Confirmación",MessageBoxButtons.OKCancel);
+            if (result == DialogResult.OK)
+            {
+                FrmVentas ventas = new FrmVentas();
+                ventas.Show();
+                    
+          } 
+        }
+
+        private void rbCredito_CheckedChanged (object sender, EventArgs e)
+        {
+            if (rbCredito.Checked)
+            {
+                FrmCredito credito = new FrmCredito();
+                credito.Show();
+            }
+        }
     }
 }

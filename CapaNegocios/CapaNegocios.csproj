@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsAbono.cs" />
     <Compile Include="clsCliente.cs" />
     <Compile Include="clsCourrier.cs" />
     <Compile Include="clsLogin.cs" />

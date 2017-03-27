@@ -133,6 +133,16 @@ namespace CapaVista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carduse_card_payment_51221 {
+            get {
+                object obj = ResourceManager.GetObject("carduse_card_payment_51221", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cart12 {
             get {
                 object obj = ResourceManager.GetObject("cart12", resourceCulture);
@@ -146,6 +156,16 @@ namespace CapaVista.Properties {
         internal static System.Drawing.Bitmap coins_stacks_money_icon_icons_com_56191 {
             get {
                 object obj = ResourceManager.GetObject("coins-stacks-money_icon-icons.com_56191", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coins_stacks_money_icon_icons1 {
+            get {
+                object obj = ResourceManager.GetObject("coins-stacks-money_icon-icons1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +246,16 @@ namespace CapaVista.Properties {
         internal static System.Drawing.Bitmap inscripcion {
             get {
                 object obj = ResourceManager.GetObject("inscripcion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap invoice {
+            get {
+                object obj = ResourceManager.GetObject("invoice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

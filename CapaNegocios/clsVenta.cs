@@ -20,5 +20,10 @@ namespace CapaNegocios
             return ventas.llenarProduct(identificacion);
         }
 
+        public bool insertarDetalle (int detalle, float precio, int cantidad, int producto, int factura)
+        {
+            return new CapaDatos.clsVenta().insertarDetalle(detalle,precio,cantidad,producto,factura);
+            
+        }
     }
 }

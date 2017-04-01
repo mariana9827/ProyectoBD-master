@@ -23,6 +23,12 @@ namespace CapaDatos
             dtProd = conecta.ejecutar("SELECT Id_Producto as 'Id Producto', Precio, Peso, Nombre, Id_Tipo as Categoría,Id_Persona as Identificación From dbo.Producto WHERE Id_Producto=(" + identificacion + ")");
             return dtProd;
         }
+
+        public bool insertarDetalle (int detalle, float precio, int cantidad, int producto,int factura)
+        {
+            CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
+            return conecta.ejecutarInsert("INSERT INTO dbo.Detalle (Id_Detalle,PrecioVenta,Cantidad,Id_Producto,Id_Factura) VALUES()");
+        }
        
     }
 }

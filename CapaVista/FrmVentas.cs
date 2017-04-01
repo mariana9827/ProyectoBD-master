@@ -75,12 +75,22 @@ namespace CapaVista
 
         private void btnAdd_Click (object sender, EventArgs e)
         {
+            CapaNegocios.clsVenta factura = new CapaNegocios.clsVenta();
             var result=MessageBox.Show("¿Seguro que deseea realizar la factura?","Confirmación",MessageBoxButtons.OKCancel);
             if (result == DialogResult.OK)
             {
-                
+                if (factura.realizarFactura(dtFecha.Value,float.Parse(txtDetalle.Text),Int32.Parse(cboCliente.Text)))
+                {
+                    if (factura.)
+                    {
+
+                    }
+                    MessageBox.Show("Factura realizada");
                     
-          } 
+
+                }
+
+            } 
         }
 
         private void rbCredito_CheckedChanged (object sender, EventArgs e)

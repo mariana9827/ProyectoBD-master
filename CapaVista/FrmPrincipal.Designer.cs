@@ -126,7 +126,7 @@
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip.Size = new System.Drawing.Size(156, 410);
+            this.menuStrip.Size = new System.Drawing.Size(156, 421);
             this.menuStrip.TabIndex = 4;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -514,7 +514,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(734, 529);
+            this.ClientSize = new System.Drawing.Size(734, 540);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);

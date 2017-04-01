@@ -206,7 +206,7 @@
             this.groupBox1.Controls.Add(this.nupCantidad);
             this.groupBox1.Location = new System.Drawing.Point(33, 125);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(239, 209);
+            this.groupBox1.Size = new System.Drawing.Size(278, 209);
             this.groupBox1.TabIndex = 90;
             this.groupBox1.TabStop = false;
             // 

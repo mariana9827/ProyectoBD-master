@@ -9,7 +9,7 @@ namespace CapaNegocios
 {
     public  class clsVenta
     {
-        public bool realizarFactura(DateTime fecha, float precio, int identificacion)
+        public bool realizarFactura(String fecha, float precio, int identificacion)
         {
             return new CapaDatos.clsVenta().insertarFactura(fecha, precio, identificacion);
         }
@@ -20,9 +20,9 @@ namespace CapaNegocios
             return ventas.llenarProduct(identificacion);
         }
 
-        public bool insertarDetalle (int detalle, float precio, int cantidad, int producto, int factura)
+        public bool insertarDetalle (int detalle, float precio, int cantidad, int producto)
         {
-            return new CapaDatos.clsVenta().insertarDetalle(detalle,precio,cantidad,producto,factura);
+            return new CapaDatos.clsVenta().insertarDetalle(detalle,precio,cantidad,producto);
             
         }
     }

@@ -10,10 +10,10 @@ namespace CapaDatos
     public class clsVenta
 
     {
-        public bool insertarFactura (DateTime fecha, float precio, int identificacion)
+        public bool insertarFactura (String fecha, float precio, int identificacion)
         {
             CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
-            return conecta.ejecutarInsert("INSERT INTO dbo.Factura(FechaVenta,Activo,Precio,Id_Persona)VALUES('" + fecha.Year.ToString() + fecha.Month.ToString() + fecha.Day.ToString() + "',1," + precio + "," + identificacion + ")");
+            return conecta.ejecutarInsert("INSERT INTO dbo.Factura(FechaVenta,Activo,Precio,Id_Persona)VALUES('" +fecha + "',1," + precio + "," + identificacion + ")");
         }
 
         public DataTable llenarProduct (int identificacion)
@@ -24,10 +24,10 @@ namespace CapaDatos
             return dtProd;
         }
 
-        public bool insertarDetalle (int detalle, float precio, int cantidad, int producto,int factura)
+        public bool insertarDetalle (int detalle, float precio, int cantidad, int producto)
         {
             CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
-            return conecta.ejecutarInsert("INSERT INTO dbo.Detalle (Id_Detalle,PrecioVenta,Cantidad,Id_Producto,Id_Factura) VALUES()");
+            return conecta.ejecutarInsert("INSERT INTO dbo.Detalle (Id_Detalle,PrecioVenta,Cantidad,Id_Producto,Id_Factura) VALUES("+detalle+","+precio+","+cantidad+","+producto+ ", @@IDENTITY)");
         }
        
     }

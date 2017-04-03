@@ -202,6 +202,7 @@
             this.txtId.Size = new System.Drawing.Size(138, 20);
             this.txtId.TabIndex = 87;
             this.txtId.Visible = false;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // txtApe2
             // 

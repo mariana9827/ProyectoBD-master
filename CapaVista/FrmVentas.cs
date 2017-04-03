@@ -76,17 +76,30 @@ namespace CapaVista
         private void btnAdd_Click (object sender, EventArgs e)
         {
             CapaNegocios.clsVenta factura = new CapaNegocios.clsVenta();
+
             var result=MessageBox.Show("¿Seguro que deseea realizar la factura?","Confirmación",MessageBoxButtons.OKCancel);
             if (result == DialogResult.OK)
             {
-                if (factura.realizarFactura(dtFecha.Value,float.Parse(txtDetalle.Text),Int32.Parse(cboCliente.Text)))
+                if (factura.realizarFactura((String)dtFecha.Text,total(),Int32.Parse(cboCliente.Text)))
                 {
-                   MessageBox.Show("Factura realizada");
+                    for (int i = 0; i < dgvVentas.Rows.Count; i++)
+                    {
+                        float precio = (float)dgvVentas["Precio",i].Value;
+                        int cantidad=(int)dgvVentas["Cantidad",i].Value;
+                        int producto=Convert.ToInt16(dgvVentas["IdProducto",i].Value);
 
+                        if (!factura.insertarDetalle(i,precio,cantidad,producto))
+                        {
+                            MessageBox.Show("Error al crear la factura, matese :(");
+                            return;
+                        }
+                        
+                    }
+                    MessageBox.Show("Factura realizada correctamente");
                 }
-                for (int i = 0; i < dgvVentas.Rows.Count; i++)
+                else
                 {
-                   
+                    MessageBox.Show("Error al crear la factura, matese :(");
                 }
             } 
         }
@@ -99,5 +112,6 @@ namespace CapaVista
                 credito.Show();
             }
         }
+     
     }
 }

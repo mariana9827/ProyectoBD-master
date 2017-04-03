@@ -27,6 +27,7 @@ namespace CapaVista
         private void btnAdd_Click (object sender, EventArgs e)
         {
             CapaNegocios.clsCliente cliente = new CapaNegocios.clsCliente();
+            CapaNegocios.clsReporteClientes reporte = new CapaNegocios.clsReporteClientes();
 
             if (rbNacional.Checked)
             {
@@ -40,7 +41,7 @@ namespace CapaVista
             {
                 if (cliente.insertarExtranjera(Int32.Parse(txtId.Text), txtName.Text, txtApe1.Text, txtApe2.Text, rbMale.Checked))
                 {
-                    MessageBox.Show("Proveedor Extranjero Agregado");
+                    MessageBox.Show("Cliente Extranjero Agregado");
                     limpiar();
                 }
             }
@@ -48,7 +49,7 @@ namespace CapaVista
             {
                 if (cliente.insertarJuridico(txtDesc.Text, txtName.Text, Int32.Parse(txtId.Text)))
                 {
-                    MessageBox.Show("Proveedor Juridico Agregado");
+                    MessageBox.Show("Cliente Juridico Agregado");
                     limpiar();
                 }
             }
@@ -116,6 +117,11 @@ namespace CapaVista
             gbGenre.Visible = false;
             lbExtran.Visible = false;
             btnAdd.Visible = true;
+        }
+
+        private void txtId_TextChanged (object sender, EventArgs e)
+        {
+
         }
     }
 

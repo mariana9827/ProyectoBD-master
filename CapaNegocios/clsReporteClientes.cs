@@ -9,26 +9,24 @@ namespace CapaNegocios
 {
     public class clsReporteClientes
     {
+        CapaDatos.clsrReporteClientes reporteClientes = new CapaDatos.clsrReporteClientes();
+
         public DataTable llenarDTGClientes ()
         {
-            CapaDatos.clsrReporteClientes reporteClientes = new CapaDatos.clsrReporteClientes();
             return reporteClientes.cargarClientes();
         }
         public DataTable llenarDTGClientesNac ()
         {
-            CapaDatos.clsrReporteClientes reporteClientesNac = new CapaDatos.clsrReporteClientes();
-            return reporteClientesNac.cargarClientesNacionales();
+            return reporteClientes.cargarClientesNacionales();
         }
 
         public DataTable llenarDTGClientesExt ()
         {
-            CapaDatos.clsrReporteClientes reporteClientesExt = new CapaDatos.clsrReporteClientes();
-            return reporteClientesExt.cargarClientesExtranjeros();
+            return reporteClientes.cargarClientesExtranjeros();
         }
         public DataTable llenarDTGClientesJur ()
-        {
-            CapaDatos.clsrReporteClientes reporteClientesJur = new CapaDatos.clsrReporteClientes();
-            return reporteClientesJur.cargarClientesJuridicos();
+        { 
+            return reporteClientes.cargarClientesJuridicos();
         }
     }
 }

@@ -70,6 +70,7 @@ namespace CapaVista
             txtSale.Text = " ";
             cboMedida.Text = " ";
             cboTipo.Text = " ";
+            txtCantidad.Text = " ";
         }
 
         private void cboProveedor_SelectedIndexChanged (object sender, EventArgs e)

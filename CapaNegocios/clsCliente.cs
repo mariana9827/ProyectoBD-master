@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,12 @@ namespace CapaNegocios
         public bool insertarJuridico (String descripcion, String nombre, int identificacion)
         {
             return new CapaDatos.clsCliente().insertarJuridico(descripcion,nombre,identificacion);
+        }
+
+        public DataTable buscar (int identificacion)
+        {
+            CapaDatos.clsCliente cliente = new CapaDatos.clsCliente();
+            return cliente.buscar(identificacion);
         }
     }
 }

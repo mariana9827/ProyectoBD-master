@@ -8,10 +8,10 @@ namespace CapaDatos
 {
     public class clsCliente
     {
+        clsConexion conect = new clsConexion();
+
         public bool insertarNacional (int identificacion, String nombre, String apellido1, String apellido2, int genero)
         {
-          
-            clsConexion conect = new clsConexion();
             bool creadoPersona, creadoNacional, creadoCliente;
 
             creadoPersona=conect.ejecutarInsert("INSERT INTO dbo.Persona(Activo,Id_Persona,Id_TipoPersona) values (1,"+identificacion+", 1)");
@@ -27,8 +27,6 @@ namespace CapaDatos
 
         public bool insertarExtranjera (int identificacion, String nombre, String apellido1, String apellido2, int genero)
         {
-
-            clsConexion conect = new clsConexion();
             bool creadoPersona, creadoExtranjero, creadoCliente;
 
             creadoPersona = conect.ejecutarInsert("INSERT INTO dbo.Persona(Activo,Id_Persona,Id_TipoPersona) values (1," + identificacion + ",2)");
@@ -44,8 +42,6 @@ namespace CapaDatos
 
         public bool insertarJuridico(String descripcion, String nombre, int identificacion)
         {
-
-            clsConexion conect = new clsConexion();
             bool creadoPersona, creadoJuridico, creadoCliente;
 
             creadoPersona = conect.ejecutarInsert("INSERT INTO dbo.Persona(Activo,Id_Persona,Id_TipoPersona) values (1," + identificacion + ", 3)");
@@ -58,6 +54,24 @@ namespace CapaDatos
             }
             return false;
         }
+
+        public bool insertarNacionalProv (int identificacion, String nombre, String apellido1, String apellido2, int genero, string descripcion)
+        {
+
+            bool creadoPersona, creadoNacional, creadoCliente,creadoProveedor;
+
+            creadoPersona = conect.ejecutarInsert("INSERT INTO dbo.Persona(Activo,Id_Persona,Id_TipoPersona) values (1," + identificacion + ", 1)");
+            creadoCliente = conect.ejecutarInsert("INSERT INTO dbo.Cliente(Id_Persona,Activo) Values(" + identificacion + ",1)");
+            creadoNacional = conect.ejecutarInsert("INSERT INTO dbo.Nacional (Nombre,Apellido1,Apellido2,Genero,Id_Persona) Values('" + nombre + "','" + apellido1 + "','" + apellido2 + "'," + genero + "," + identificacion + ")"); 
+            creadoProveedor = conect.ejecutarInsert("INSERT INTO dbo.Proveedor(Activo,Descripcion,Id_Persona,Nombre)Values(1,'" + descripcion + "'," + identificacion + ",'" + nombre + "')");
+
+            if (creadoPersona && creadoNacional && creadoCliente && creadoProveedor)
+            {
+                return true;
+            }
+            return false;
+        }
+              
     }
 }
  

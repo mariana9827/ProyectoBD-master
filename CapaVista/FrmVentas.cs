@@ -81,15 +81,13 @@ namespace CapaVista
             {
                 if (factura.realizarFactura(dtFecha.Value,float.Parse(txtDetalle.Text),Int32.Parse(cboCliente.Text)))
                 {
-                    if (factura.)
-                    {
-
-                    }
-                    MessageBox.Show("Factura realizada");
-                    
+                   MessageBox.Show("Factura realizada");
 
                 }
-
+                for (int i = 0; i < dgvVentas.Rows.Count; i++)
+                {
+                   
+                }
             } 
         }
 

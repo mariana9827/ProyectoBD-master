@@ -9,18 +9,17 @@ namespace CapaDatos
 {
     public class clsProveedor
     {
+        clsConexion conect = new clsConexion();
+
         public DataTable cargarClientes ()
         {
-            clsConexion conecta = new clsConexion();
             DataTable dtclientes;
-            dtclientes = conecta.ejecutar("SELECT Id_Persona,Activo from dbo.Cliente");
+            dtclientes = conect.ejecutar("SELECT Id_Persona,Activo from dbo.Cliente");
             return dtclientes;
         }
 
         public bool insertarNacional (int identificacion, String nombre, String apellido1, String apellido2, int genero, String descripcion)
         {
-
-            clsConexion conect = new clsConexion();
             bool creadoPersona, creadoNacional, creadoProveedor;
 
             creadoPersona = conect.ejecutarInsert("INSERT INTO dbo.Persona(Activo,Id_Persona,Id_TipoPersona) values (1," + identificacion + ", 1)");
@@ -37,7 +36,6 @@ namespace CapaDatos
         public bool insertarExtranjera (int identificacion, String nombre, String apellido1, String apellido2, int genero, String descripcion)
         {
 
-            clsConexion conect = new clsConexion();
             bool creadoPersona, creadoExtranjero, creadoProveedor;
 
             creadoPersona = conect.ejecutarInsert("INSERT INTO dbo.Persona(Activo,Id_Persona,Id_TipoPersona) values (1," + identificacion + ",2)");
@@ -52,9 +50,7 @@ namespace CapaDatos
         }
 
         public bool insertarJuridico (String descripcion, String nombre, int identificacion)
-        {
-
-            clsConexion conect = new clsConexion();
+        {                     
             bool creadoPersona, creadoJuridico, creadoProveedor;
 
             creadoPersona = conect.ejecutarInsert("INSERT INTO dbo.Persona(Activo,Id_Persona,Id_TipoPersona) values (1," + identificacion + ", 3)");
@@ -67,5 +63,11 @@ namespace CapaDatos
             }
             return false;
         }
+
+        public bool insertarProve (String descripcion, int identificacion, String nombre)
+        {
+          return conect.ejecutarInsert("INSERT INTO dbo.Proveedor(Activo,Descripcion,Id_Persona,Nombre)Values(1,'" + descripcion + "'," + identificacion + ",'" + nombre + "')");
+        }
+  
     }
 }

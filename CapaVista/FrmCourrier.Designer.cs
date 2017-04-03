@@ -51,9 +51,9 @@
             this.label8.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(127, 42);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(154, 26);
+            this.label8.Size = new System.Drawing.Size(147, 26);
             this.label8.TabIndex = 39;
-            this.label8.Text = "Agregar Courrier";
+            this.label8.Text = "Agregar Courier";
             // 
             // label5
             // 
@@ -144,7 +144,7 @@
             this.Controls.Add(this.btnAddCou);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCourrier";
-            this.Text = "Courrier";
+            this.Text = "Courier";
             this.Load += new System.EventHandler(this.FrmCourrier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicaBindingSource)).EndInit();

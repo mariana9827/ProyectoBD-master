@@ -36,14 +36,12 @@
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.btnCliente = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.courrierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.juridicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.juridicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.clienteExistenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.courrierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnReports = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -134,10 +132,10 @@
             // 
             this.btnCliente.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarToolStripMenuItem,
-            this.proveedorToolStripMenuItem,
             this.productoToolStripMenuItem,
+            this.courrierToolStripMenuItem,
             this.juridicoToolStripMenuItem,
-            this.courrierToolStripMenuItem});
+            this.proveedorToolStripMenuItem});
             this.btnCliente.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(16)))));
             this.btnCliente.Image = global::CapaVista.Properties.Resources.plus_icon_icons_com_69985;
@@ -154,6 +152,30 @@
             this.agregarToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
             this.agregarToolStripMenuItem.Text = "Cliente";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click_1);
+            // 
+            // productoToolStripMenuItem
+            // 
+            this.productoToolStripMenuItem.Image = global::CapaVista.Properties.Resources.shopping_cart_add_button_icon_icons_com_56132;
+            this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.productoToolStripMenuItem.Text = "Producto";
+            this.productoToolStripMenuItem.Click += new System.EventHandler(this.productoToolStripMenuItem_Click);
+            // 
+            // courrierToolStripMenuItem
+            // 
+            this.courrierToolStripMenuItem.Image = global::CapaVista.Properties.Resources.message;
+            this.courrierToolStripMenuItem.Name = "courrierToolStripMenuItem";
+            this.courrierToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.courrierToolStripMenuItem.Text = "Courier";
+            this.courrierToolStripMenuItem.Click += new System.EventHandler(this.courrierToolStripMenuItem_Click);
+            // 
+            // juridicoToolStripMenuItem
+            // 
+            this.juridicoToolStripMenuItem.Image = global::CapaVista.Properties.Resources.man_with_company1;
+            this.juridicoToolStripMenuItem.Name = "juridicoToolStripMenuItem";
+            this.juridicoToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.juridicoToolStripMenuItem.Text = "Juridico";
+            this.juridicoToolStripMenuItem.Click += new System.EventHandler(this.juridicoToolStripMenuItem_Click);
             // 
             // proveedorToolStripMenuItem
             // 
@@ -178,45 +200,7 @@
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
             this.clienteToolStripMenuItem.Size = new System.Drawing.Size(211, 28);
             this.clienteToolStripMenuItem.Text = "Cliente Existente";
-            // 
-            // productoToolStripMenuItem
-            // 
-            this.productoToolStripMenuItem.Image = global::CapaVista.Properties.Resources.shopping_cart_add_button_icon_icons_com_56132;
-            this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
-            this.productoToolStripMenuItem.Text = "Producto";
-            this.productoToolStripMenuItem.Click += new System.EventHandler(this.productoToolStripMenuItem_Click);
-            // 
-            // juridicoToolStripMenuItem
-            // 
-            this.juridicoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevoToolStripMenuItem1,
-            this.clienteExistenteToolStripMenuItem});
-            this.juridicoToolStripMenuItem.Image = global::CapaVista.Properties.Resources.man_with_company1;
-            this.juridicoToolStripMenuItem.Name = "juridicoToolStripMenuItem";
-            this.juridicoToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
-            this.juridicoToolStripMenuItem.Text = "Juridico";
-            // 
-            // nuevoToolStripMenuItem1
-            // 
-            this.nuevoToolStripMenuItem1.Name = "nuevoToolStripMenuItem1";
-            this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(211, 28);
-            this.nuevoToolStripMenuItem1.Text = "Nuevo";
-            this.nuevoToolStripMenuItem1.Click += new System.EventHandler(this.nuevoToolStripMenuItem1_Click);
-            // 
-            // clienteExistenteToolStripMenuItem
-            // 
-            this.clienteExistenteToolStripMenuItem.Name = "clienteExistenteToolStripMenuItem";
-            this.clienteExistenteToolStripMenuItem.Size = new System.Drawing.Size(211, 28);
-            this.clienteExistenteToolStripMenuItem.Text = "Cliente Existente";
-            // 
-            // courrierToolStripMenuItem
-            // 
-            this.courrierToolStripMenuItem.Image = global::CapaVista.Properties.Resources.message;
-            this.courrierToolStripMenuItem.Name = "courrierToolStripMenuItem";
-            this.courrierToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
-            this.courrierToolStripMenuItem.Text = "Courrier";
-            this.courrierToolStripMenuItem.Click += new System.EventHandler(this.courrierToolStripMenuItem_Click);
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // ventaToolStripMenuItem
             // 
@@ -555,10 +539,7 @@
         private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem proveedorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem juridicoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem clienteExistenteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem courrierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
@@ -586,6 +567,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem31;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem32;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem33;
+        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
     }
 }
 

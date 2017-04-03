@@ -50,5 +50,10 @@ namespace CapaNegocios
             CapaDatos.clsProveedor ID= new CapaDatos.clsProveedor();
             return ID.cargarClientes();
         }
+
+        public bool insertarProveedor (String descripcion, int identificacion, String nombre)
+        {
+            return new CapaDatos.clsProveedor().insertarProve(descripcion,identificacion,nombre);
+        }
     }
 } 

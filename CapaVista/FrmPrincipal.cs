@@ -68,12 +68,12 @@ namespace CapaVista
 
         private void ToolBarToolStripMenuItem_Click (object sender, EventArgs e)
         {
-         
+
         }
 
         private void StatusBarToolStripMenuItem_Click (object sender, EventArgs e)
         {
-            
+
         }
 
         private void CascadeToolStripMenuItem_Click (object sender, EventArgs e)
@@ -112,13 +112,13 @@ namespace CapaVista
         private void FrmPrincipal_Load (object sender, EventArgs e)
         {
 
-            
+
 
         }
 
         private void btnCliente_Click (object sender, EventArgs e)
         {
-            
+
         }
 
         private void menuStrip_ItemClicked (object sender, ToolStripItemClickedEventArgs e)
@@ -128,7 +128,7 @@ namespace CapaVista
 
         private void agregarToolStripMenuItem_Click (object sender, EventArgs e)
         {
-          
+
         }
 
         private void nacionalExtranjeroToolStripMenuItem_Click (object sender, EventArgs e)
@@ -140,18 +140,16 @@ namespace CapaVista
 
         private void currierToolStripMenuItem_Click (object sender, EventArgs e)
         {
-         
+
         }
 
         private void nacionalExtranjeroToolStripMenuItem_Click_1 (object sender, EventArgs e)
         {
-         
+
         }
 
         private void jurídicaToolStripMenuItem_Click (object sender, EventArgs e)
         {
-            FrmJuridico juridico = new FrmJuridico();
-            juridico.Show();
         }
 
         private void productoToolStripMenuItem_Click (object sender, EventArgs e)
@@ -172,7 +170,7 @@ namespace CapaVista
 
         private void clientesToolStripMenuItem1_Click (object sender, EventArgs e)
         {
-           
+
             FrmReporteCliente reporCliente = new FrmReporteCliente();
             reporCliente.Show();
         }
@@ -185,7 +183,7 @@ namespace CapaVista
 
         private void proveedoresToolStripMenuItem1_Click (object sender, EventArgs e)
         {
-            FrmReporteProveedores reporProvee= new FrmReporteProveedores();
+            FrmReporteProveedores reporProvee = new FrmReporteProveedores();
             reporProvee.Show();
         }
 
@@ -216,7 +214,19 @@ namespace CapaVista
         private void nuevoToolStripMenuItem1_Click (object sender, EventArgs e)
         {
             FrmCliente cliente = new FrmCliente();
-            cliente.MdiParent = this;
+            cliente.Show();
+        }
+
+        private void clienteToolStripMenuItem_Click (object sender, EventArgs e)
+        {
+            FrmClienteProv prove = new FrmClienteProv();
+            prove.Show();
+        }
+
+        private void juridicoToolStripMenuItem_Click (object sender, EventArgs e)
+        {
+            FrmJuridico juridico = new FrmJuridico();
+            juridico.Show();
         }
     }
 }

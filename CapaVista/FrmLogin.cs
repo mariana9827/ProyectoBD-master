@@ -20,7 +20,7 @@ namespace CapaVista
         private void button1_Click (object sender, EventArgs e)
         {
             CapaNegocios.clsLogin login = new CapaNegocios.clsLogin();
-            if (login.login(txtUser.Text,txtPass.Text).Rows.Count>0)
+            if (login.login(txtUser.Text,textPassw.Text).Rows.Count>0)
             {
                 new FrmPrincipal().Show();
             }

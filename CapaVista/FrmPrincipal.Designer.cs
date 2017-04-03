@@ -48,8 +48,6 @@
             this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnReports = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cuentasPorCobrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.paqueteriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -246,8 +244,6 @@
             // 
             this.btnReports.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem1,
-            this.cuentasPorCobrarToolStripMenuItem,
-            this.paqueteriaToolStripMenuItem,
             this.proveedoresToolStripMenuItem1,
             this.productosToolStripMenuItem});
             this.btnReports.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -262,29 +258,15 @@
             // 
             this.clientesToolStripMenuItem1.Image = global::CapaVista.Properties.Resources._7b5f65_12de7cffa2f7494a9abfc5547d98718a;
             this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
-            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(229, 28);
+            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(177, 28);
             this.clientesToolStripMenuItem1.Text = "Clientes";
             this.clientesToolStripMenuItem1.Click += new System.EventHandler(this.clientesToolStripMenuItem1_Click);
-            // 
-            // cuentasPorCobrarToolStripMenuItem
-            // 
-            this.cuentasPorCobrarToolStripMenuItem.Image = global::CapaVista.Properties.Resources.coins_stacks_money_icon_icons_com_56191;
-            this.cuentasPorCobrarToolStripMenuItem.Name = "cuentasPorCobrarToolStripMenuItem";
-            this.cuentasPorCobrarToolStripMenuItem.Size = new System.Drawing.Size(229, 28);
-            this.cuentasPorCobrarToolStripMenuItem.Text = "Cuentas por Cobrar";
-            // 
-            // paqueteriaToolStripMenuItem
-            // 
-            this.paqueteriaToolStripMenuItem.Image = global::CapaVista.Properties.Resources.drop_box_online_social_media_icon_icons_com_71865;
-            this.paqueteriaToolStripMenuItem.Name = "paqueteriaToolStripMenuItem";
-            this.paqueteriaToolStripMenuItem.Size = new System.Drawing.Size(229, 28);
-            this.paqueteriaToolStripMenuItem.Text = "Paqueteria";
             // 
             // proveedoresToolStripMenuItem1
             // 
             this.proveedoresToolStripMenuItem1.Image = global::CapaVista.Properties.Resources.phone_call_icon_icons_com_63771;
             this.proveedoresToolStripMenuItem1.Name = "proveedoresToolStripMenuItem1";
-            this.proveedoresToolStripMenuItem1.Size = new System.Drawing.Size(229, 28);
+            this.proveedoresToolStripMenuItem1.Size = new System.Drawing.Size(177, 28);
             this.proveedoresToolStripMenuItem1.Text = "Proveedores";
             this.proveedoresToolStripMenuItem1.Click += new System.EventHandler(this.proveedoresToolStripMenuItem1_Click);
             // 
@@ -292,7 +274,7 @@
             // 
             this.productosToolStripMenuItem.Image = global::CapaVista.Properties.Resources.cart12;
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(229, 28);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(177, 28);
             this.productosToolStripMenuItem.Text = "Productos";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
             // 
@@ -560,10 +542,8 @@
         private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btnReports;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cuentasPorCobrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventaToolStripMenuItem;
         internal System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem paqueteriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem;

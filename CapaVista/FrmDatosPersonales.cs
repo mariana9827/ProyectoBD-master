@@ -77,5 +77,14 @@ namespace CapaVista
         {
 
         }
+
+        private void btnAdd_Click (object sender, EventArgs e)
+        {
+            CapaNegocios.clsDatosPersonales datos = new CapaNegocios.clsDatosPersonales();
+            if (datos.insertaDireccion(Convert.ToInt32(cboPais.SelectedValue),txtprov.Text,Int32.Parse(txtCodPos.Text),txtDescDir.Text,Convert.ToInt32(cboId.SelectedValue),Convert.ToInt32(cboAdress.SelectedValue)))
+            {
+                MessageBox.Show("Direccion insertada");
+            }
+        }
     }
 }

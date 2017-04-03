@@ -38,10 +38,20 @@ namespace CapaDatos
             return dtTel;
         }
 
-        //public bool insertarDireccion (int pais, String nombre, int provincia)
-        //{
+        public bool insertarDireccion (int pais, String nombre,int codpostal,String desc,int identificacion,int tipodir)
+        {
+            bool creadoProvincia, creadoDireccion;
 
-        //}
+            creadoProvincia = conexion.ejecutarInsert("INSERT INTO dbo.Provincia(Nombre, Id_Pais)Values('"+nombre+"',"+pais+")");
+            creadoDireccion = conexion.ejecutarInsert("INSERT INTO dbo.Direccion(Id_Provincia,Id_Pais,Id_TipoDireccion,CodPostal,Descripcion,Activo,Id_Persona)VALUES(IDENT_Current('dbo.Provincia'),"+pais+","+tipodir+","+codpostal+","+desc+",1,"+identificacion+")");
+
+            if (creadoProvincia && creadoDireccion)
+            { 
+                return true;
+            }
+            return false;
+          
+        }
 
 
     }

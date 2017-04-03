@@ -29,5 +29,10 @@ namespace CapaNegocios
             CapaDatos.clsDatosPersonales datos = new CapaDatos.clsDatosPersonales();
             return datos.tipoTelefono();
         }
+
+        public bool insertaDireccion (int pais, String nombre,int codpostal, String desc, int identificacion,int tipodire)
+        {
+            return new CapaDatos.clsDatosPersonales().insertarDireccion(pais,nombre,codpostal,desc,identificacion,tipodire);
+        }
     }
 }

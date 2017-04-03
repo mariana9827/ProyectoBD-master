@@ -94,5 +94,10 @@ namespace CapaVista
             cboTipo.DisplayMember = "Nombre";
             cboTipo.ValueMember = "Id_Tipo";
         }
+
+        private void cboProveedor_SelectedIndexChanged_1 (object sender, EventArgs e)
+        {
+
+        }
     }
 }

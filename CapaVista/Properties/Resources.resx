@@ -121,11 +121,14 @@
   <data name="delivery-packages-on-a-trolley" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delivery-packages-on-a-trolley.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carduse_card_payment_5122" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carduse_card_payment_5122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="carduse_card_payment_51221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carduse_card_payment_51221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="multiple-users-silhouette (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multiple-users-silhouette (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="27799" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\27799.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="coins-stacks-money_icon-icons.com_56191" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coins-stacks-money_icon-icons.com_56191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,8 +136,8 @@
   <data name="plus_icon-icons.com_69985" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plus_icon-icons.com_69985.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1489825052_user_profile_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1489825052_user_profile_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coins-stacks-money_icon-icons2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coins-stacks-money_icon-icons.com_561912.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1486146612-propertyagent002_79450" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1486146612-propertyagent002_79450.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,14 +151,20 @@
   <data name="drop_box_online_social_media_icon-icons.com_71865" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\drop_box_online_social_media_icon-icons.com_71865.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="filledbox__45721" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filledbox__45721.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="7b5f65_12de7cffa2f7494a9abfc5547d98718a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7b5f65_12de7cffa2f7494a9abfc5547d98718a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="man-with-company1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\man-with-company1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="carduse_card_payment_5122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carduse_card_payment_5122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logistics-delivery" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logistics-delivery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="id-card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\id-card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sell_5097" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sell_5097.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,8 +178,11 @@
   <data name="delivery-packages-on-a-trolley (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delivery-packages-on-a-trolley (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shopping-cart-with-an-arrow_icon-icons.com_56122" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shopping-cart-with-an-arrow_icon-icons.com_56122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="filledbox__4572" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filledbox__4572.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coins-stacks-money_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coins-stacks-money_icon-icons.com_561911.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shopping-cart-add-button_icon-icons.com_56132" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopping-cart-add-button_icon-icons.com_56132.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,20 +199,20 @@
   <data name="1489824984_add_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1489824984_add_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1489825052_user_profile_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1489825052_user_profile_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="person-add_icon-icons.com_50077" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person-add_icon-icons.com_50077.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="27799" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\27799.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shopping-cart-with-an-arrow_icon-icons.com_56122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-cart-with-an-arrow_icon-icons.com_56122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delivery-packages-on-a-trolley (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delivery-packages-on-a-trolley (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carduse_card_payment_51221" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carduse_card_payment_51221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coins-stacks-money_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coins-stacks-money_icon-icons.com_561911.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="man-with-company1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\man-with-company1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="multiple-users-silhouette1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multiple-users-silhouette1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,7 +238,7 @@
   <data name="message" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\message.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="coins-stacks-money_icon-icons2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coins-stacks-money_icon-icons.com_561912.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="id-card1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\id-card1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

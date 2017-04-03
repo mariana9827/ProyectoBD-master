@@ -44,6 +44,7 @@
     <Compile Include="clsCliente.cs" />
     <Compile Include="clsCourrier.cs" />
     <Compile Include="clsCredito.cs" />
+    <Compile Include="clsDatosPersonales.cs" />
     <Compile Include="clsJuridico.cs" />
     <Compile Include="clsLogin.cs" />
     <Compile Include="clsProducto.cs" />

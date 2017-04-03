@@ -27,7 +27,7 @@ namespace CapaDatos
         public bool insertarDetalle (int detalle, float precio, int cantidad, int producto)
         {
             CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
-            return conecta.ejecutarInsert("INSERT INTO dbo.Detalle (Id_Detalle,PrecioVenta,Cantidad,Id_Producto,Id_Factura) VALUES("+detalle+","+precio+","+cantidad+","+producto+ ", @@IDENTITY)");
+            return conecta.ejecutarInsert("INSERT INTO dbo.Detalle (Id_Detalle,PrecioVenta,Cantidad,Id_Producto,Id_Factura) VALUES("+detalle+","+precio+","+cantidad+","+producto+ ",  IDENT_Current('dbo.Factura'))");
         }
        
     }

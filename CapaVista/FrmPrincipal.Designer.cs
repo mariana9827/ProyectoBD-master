@@ -42,6 +42,9 @@
             this.proveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paqueteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.datosPersonalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnReports = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -135,7 +138,10 @@
             this.productoToolStripMenuItem,
             this.courrierToolStripMenuItem,
             this.juridicoToolStripMenuItem,
-            this.proveedorToolStripMenuItem});
+            this.proveedorToolStripMenuItem,
+            this.pagoToolStripMenuItem,
+            this.paqueteToolStripMenuItem,
+            this.datosPersonalesToolStripMenuItem});
             this.btnCliente.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(16)))));
             this.btnCliente.Image = global::CapaVista.Properties.Resources.plus_icon_icons_com_69985;
@@ -149,7 +155,7 @@
             // 
             this.agregarToolStripMenuItem.Image = global::CapaVista.Properties.Resources.person_add_icon_icons_com_50077;
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(210, 28);
             this.agregarToolStripMenuItem.Text = "Cliente";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click_1);
             // 
@@ -157,7 +163,7 @@
             // 
             this.productoToolStripMenuItem.Image = global::CapaVista.Properties.Resources.shopping_cart_add_button_icon_icons_com_56132;
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(210, 28);
             this.productoToolStripMenuItem.Text = "Producto";
             this.productoToolStripMenuItem.Click += new System.EventHandler(this.productoToolStripMenuItem_Click);
             // 
@@ -165,7 +171,7 @@
             // 
             this.courrierToolStripMenuItem.Image = global::CapaVista.Properties.Resources.message;
             this.courrierToolStripMenuItem.Name = "courrierToolStripMenuItem";
-            this.courrierToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.courrierToolStripMenuItem.Size = new System.Drawing.Size(210, 28);
             this.courrierToolStripMenuItem.Text = "Courier";
             this.courrierToolStripMenuItem.Click += new System.EventHandler(this.courrierToolStripMenuItem_Click);
             // 
@@ -173,7 +179,7 @@
             // 
             this.juridicoToolStripMenuItem.Image = global::CapaVista.Properties.Resources.man_with_company1;
             this.juridicoToolStripMenuItem.Name = "juridicoToolStripMenuItem";
-            this.juridicoToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.juridicoToolStripMenuItem.Size = new System.Drawing.Size(210, 28);
             this.juridicoToolStripMenuItem.Text = "Juridico";
             this.juridicoToolStripMenuItem.Click += new System.EventHandler(this.juridicoToolStripMenuItem_Click);
             // 
@@ -184,7 +190,7 @@
             this.clienteToolStripMenuItem});
             this.proveedorToolStripMenuItem.Image = global::CapaVista.Properties.Resources.phone_call_icon_icons_com_63771;
             this.proveedorToolStripMenuItem.Name = "proveedorToolStripMenuItem";
-            this.proveedorToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.proveedorToolStripMenuItem.Size = new System.Drawing.Size(210, 28);
             this.proveedorToolStripMenuItem.Text = "Proveedor";
             this.proveedorToolStripMenuItem.Click += new System.EventHandler(this.proveedorToolStripMenuItem_Click);
             // 
@@ -201,6 +207,30 @@
             this.clienteToolStripMenuItem.Size = new System.Drawing.Size(211, 28);
             this.clienteToolStripMenuItem.Text = "Cliente Existente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
+            // 
+            // pagoToolStripMenuItem
+            // 
+            this.pagoToolStripMenuItem.Image = global::CapaVista.Properties.Resources.coins_stacks_money_icon_icons_com_56191;
+            this.pagoToolStripMenuItem.Name = "pagoToolStripMenuItem";
+            this.pagoToolStripMenuItem.Size = new System.Drawing.Size(210, 28);
+            this.pagoToolStripMenuItem.Text = "Pago";
+            this.pagoToolStripMenuItem.Click += new System.EventHandler(this.pagoToolStripMenuItem_Click);
+            // 
+            // paqueteToolStripMenuItem
+            // 
+            this.paqueteToolStripMenuItem.Image = global::CapaVista.Properties.Resources.filledbox__4572;
+            this.paqueteToolStripMenuItem.Name = "paqueteToolStripMenuItem";
+            this.paqueteToolStripMenuItem.Size = new System.Drawing.Size(210, 28);
+            this.paqueteToolStripMenuItem.Text = "Paquete";
+            this.paqueteToolStripMenuItem.Click += new System.EventHandler(this.paqueteToolStripMenuItem_Click);
+            // 
+            // datosPersonalesToolStripMenuItem
+            // 
+            this.datosPersonalesToolStripMenuItem.Image = global::CapaVista.Properties.Resources.id_card1;
+            this.datosPersonalesToolStripMenuItem.Name = "datosPersonalesToolStripMenuItem";
+            this.datosPersonalesToolStripMenuItem.Size = new System.Drawing.Size(210, 28);
+            this.datosPersonalesToolStripMenuItem.Text = "DatosPersonales";
+            this.datosPersonalesToolStripMenuItem.Click += new System.EventHandler(this.datosPersonalesToolStripMenuItem_Click);
             // 
             // ventaToolStripMenuItem
             // 
@@ -568,6 +598,9 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem32;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem33;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pagoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem paqueteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem datosPersonalesToolStripMenuItem;
     }
 }
 

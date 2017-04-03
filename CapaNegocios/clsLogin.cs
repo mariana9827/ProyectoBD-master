@@ -9,6 +9,9 @@ namespace CapaNegocios
 {
     public class clsLogin
     {
-     
+     public DataTable login(String user, String password)
+        {
+            return new CapaDatos.clsLogin().CargarDatos(user,password);
+        }
     }
 }

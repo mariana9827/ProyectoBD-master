@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmDatosPersonales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosPersonales.Designer.cs">
+      <DependentUpon>FrmDatosPersonales.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAbonos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,17 +75,29 @@
     <Compile Include="FrmCourrier.Designer.cs">
       <DependentUpon>FrmCourrier.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCredito.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCredito.Designer.cs">
-      <DependentUpon>FrmCredito.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmJuridico.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmJuridico.Designer.cs">
       <DependentUpon>FrmJuridico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPago.Designer.cs">
+      <DependentUpon>FrmPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPaquetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPaquetes.Designer.cs">
+      <DependentUpon>FrmPaquetes.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -142,11 +160,20 @@
     <EmbeddedResource Include="FrmCourrier.resx">
       <DependentUpon>FrmCourrier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCredito.resx">
-      <DependentUpon>FrmCredito.cs</DependentUpon>
+    <EmbeddedResource Include="FrmDatosPersonales.resx">
+      <DependentUpon>FrmDatosPersonales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmJuridico.resx">
       <DependentUpon>FrmJuridico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPago.resx">
+      <DependentUpon>FrmPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPaquetes.resx">
+      <DependentUpon>FrmPaquetes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
@@ -319,6 +346,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\coins-stacks-money_icon-icons.com_561912.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filledbox__4572.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filledbox__45721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

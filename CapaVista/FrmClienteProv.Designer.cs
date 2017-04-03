@@ -125,6 +125,7 @@
             this.cboID.Name = "cboID";
             this.cboID.Size = new System.Drawing.Size(138, 21);
             this.cboID.TabIndex = 85;
+            this.cboID.SelectedIndexChanged += new System.EventHandler(this.cboID_SelectedIndexChanged_1);
             this.cboID.Click += new System.EventHandler(this.cboID_SelectedIndexChanged);
             // 
             // FrmClienteProv

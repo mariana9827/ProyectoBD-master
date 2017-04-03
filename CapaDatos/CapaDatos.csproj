@@ -45,8 +45,10 @@
     <Compile Include="clsConexion.cs" />
     <Compile Include="clsCourrier.cs" />
     <Compile Include="clsCredito.cs" />
+    <Compile Include="clsDatosPersonales.cs" />
     <Compile Include="clsJuridico.cs" />
     <Compile Include="clsLogin.cs" />
+    <Compile Include="clsPaquetes.cs" />
     <Compile Include="clsProducto.cs" />
     <Compile Include="clsProveedor.cs" />
     <Compile Include="clsReporteProveedores.cs" />

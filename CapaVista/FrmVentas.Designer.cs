@@ -50,10 +50,6 @@
             this.lbValor = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.rbCredito = new System.Windows.Forms.RadioButton();
-            this.rbContado = new System.Windows.Forms.RadioButton();
             this.cboCliente = new System.Windows.Forms.ComboBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -61,7 +57,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +64,7 @@
             // 
             this.lbDes.AutoSize = true;
             this.lbDes.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDes.Location = new System.Drawing.Point(17, 55);
+            this.lbDes.Location = new System.Drawing.Point(38, 57);
             this.lbDes.Name = "lbDes";
             this.lbDes.Size = new System.Drawing.Size(60, 19);
             this.lbDes.TabIndex = 80;
@@ -181,7 +176,7 @@
             // 
             this.lbFecha.AutoSize = true;
             this.lbFecha.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFecha.Location = new System.Drawing.Point(17, 222);
+            this.lbFecha.Location = new System.Drawing.Point(38, 175);
             this.lbFecha.Name = "lbFecha";
             this.lbFecha.Size = new System.Drawing.Size(94, 19);
             this.lbFecha.TabIndex = 88;
@@ -191,7 +186,7 @@
             // 
             this.dtFecha.CustomFormat = "dd/MM/yyy";
             this.dtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtFecha.Location = new System.Drawing.Point(68, 244);
+            this.dtFecha.Location = new System.Drawing.Point(89, 197);
             this.dtFecha.Name = "dtFecha";
             this.dtFecha.Size = new System.Drawing.Size(127, 20);
             this.dtFecha.TabIndex = 89;
@@ -253,66 +248,20 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Controls.Add(this.dtFecha);
             this.groupBox2.Controls.Add(this.lbFecha);
             this.groupBox2.Controls.Add(this.cboCliente);
             this.groupBox2.Controls.Add(this.lbDes);
-            this.groupBox2.Location = new System.Drawing.Point(375, 12);
+            this.groupBox2.Location = new System.Drawing.Point(361, 23);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(250, 322);
+            this.groupBox2.Size = new System.Drawing.Size(250, 266);
             this.groupBox2.TabIndex = 91;
             this.groupBox2.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(17, 118);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 19);
-            this.label7.TabIndex = 93;
-            this.label7.Text = "Pago:";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.rbCredito);
-            this.groupBox3.Controls.Add(this.rbContado);
-            this.groupBox3.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(21, 140);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(215, 40);
-            this.groupBox3.TabIndex = 92;
-            this.groupBox3.TabStop = false;
-            // 
-            // rbCredito
-            // 
-            this.rbCredito.AutoSize = true;
-            this.rbCredito.Location = new System.Drawing.Point(144, 13);
-            this.rbCredito.Name = "rbCredito";
-            this.rbCredito.Size = new System.Drawing.Size(65, 19);
-            this.rbCredito.TabIndex = 1;
-            this.rbCredito.TabStop = true;
-            this.rbCredito.Text = "Crédito";
-            this.rbCredito.UseVisualStyleBackColor = true;
-            this.rbCredito.CheckedChanged += new System.EventHandler(this.rbCredito_CheckedChanged);
-            // 
-            // rbContado
-            // 
-            this.rbContado.AutoSize = true;
-            this.rbContado.Location = new System.Drawing.Point(6, 13);
-            this.rbContado.Name = "rbContado";
-            this.rbContado.Size = new System.Drawing.Size(72, 19);
-            this.rbContado.TabIndex = 0;
-            this.rbContado.TabStop = true;
-            this.rbContado.Text = "Contado";
-            this.rbContado.UseVisualStyleBackColor = true;
             // 
             // cboCliente
             // 
             this.cboCliente.FormattingEnabled = true;
-            this.cboCliente.Location = new System.Drawing.Point(68, 77);
+            this.cboCliente.Location = new System.Drawing.Point(89, 91);
             this.cboCliente.Name = "cboCliente";
             this.cboCliente.Size = new System.Drawing.Size(127, 21);
             this.cboCliente.TabIndex = 83;
@@ -356,14 +305,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmVentas";
             this.Text = "Ventas";
+            this.Load += new System.EventHandler(this.FrmVentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nupCantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -390,10 +338,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ComboBox cboCliente;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton rbCredito;
-        private System.Windows.Forms.RadioButton rbContado;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Peso;

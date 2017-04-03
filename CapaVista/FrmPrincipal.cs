@@ -228,5 +228,24 @@ namespace CapaVista
             FrmJuridico juridico = new FrmJuridico();
             juridico.Show();
         }
+
+        private void pagoToolStripMenuItem_Click (object sender, EventArgs e)
+        {
+            FrmPago pago = new FrmPago();
+            pago.Show();
+        }
+
+        private void paqueteToolStripMenuItem_Click (object sender, EventArgs e)
+        {
+            FrmPaquetes paque = new FrmPaquetes();
+            paque.Show();
+        }
+
+        private void datosPersonalesToolStripMenuItem_Click (object sender, EventArgs e)
+        {
+            FrmDatosPersonales datos = new FrmDatosPersonales();
+            datos.Show();
+        
+        }
     }
 }

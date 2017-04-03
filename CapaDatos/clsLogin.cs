@@ -10,12 +10,12 @@ namespace CapaDatos
 {
     public class clsLogin
     {
-        public DataTable CargarDatos ()
+        public DataTable CargarDatos (String user, String password)
         {
             CapaDatos.clsConexion conexion = new clsConexion();
             DataTable dtUsarios;
 
-            dtUsarios = conexion.ejecutar("Select Usuario, Contraseña FROM dbo.Administrador");
+            dtUsarios = conexion.ejecutar("Select Usuario from dbo.Administrador where Usuario='"+user+"' and Contraseña='"+password+"'");
             return dtUsarios;
         }
     }

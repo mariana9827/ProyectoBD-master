@@ -76,7 +76,7 @@ namespace CapaVista
         private void btnAdd_Click (object sender, EventArgs e)
         {
             CapaNegocios.clsVenta factura = new CapaNegocios.clsVenta();
-
+            
             var result=MessageBox.Show("¿Seguro que deseea realizar la factura?","Confirmación",MessageBoxButtons.OKCancel);
             if (result == DialogResult.OK)
             {
@@ -90,28 +90,33 @@ namespace CapaVista
 
                         if (!factura.insertarDetalle(i,precio,cantidad,producto))
                         {
-                            MessageBox.Show("Error al crear la factura, matese :(");
+                            MessageBox.Show("Error al crear la factura");
                             return;
                         }
                         
                     }
                     MessageBox.Show("Factura realizada correctamente");
+                    var resulta = MessageBox.Show("¿Desea insertar el tipo de pago?", "Confirmación", MessageBoxButtons.OKCancel);
+                    if (resulta==DialogResult.OK)
+                    {
+                        FrmPago pago = new FrmPago();
+                        pago.Show();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Error al crear la factura, matese :(");
+                    MessageBox.Show("Error al crear la factura");
                 }
             } 
         }
 
         private void rbCredito_CheckedChanged (object sender, EventArgs e)
         {
-            if (rbCredito.Checked)
-            {
-                FrmCredito credito = new FrmCredito();
-                credito.Show();
-            }
         }
-     
+
+        private void FrmVentas_Load (object sender, EventArgs e)
+        {
+
+        }
     }
 }

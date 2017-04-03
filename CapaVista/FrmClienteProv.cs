@@ -47,5 +47,10 @@ namespace CapaVista
         {
             
         }
+
+        private void cboID_SelectedIndexChanged_1 (object sender, EventArgs e)
+        {
+
+        }
     }
 }
